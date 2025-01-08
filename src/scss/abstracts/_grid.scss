@@ -1,8 +1,21 @@
 @use 'sass:map';
 
+:root {
+	--gutter-x: 1.188rem; //13px => column gap
+	--gutter-y: 0;
+}
+
+.container {
+	width: 100%;
+	max-width: 1512px;
+	margin-right: auto;
+	margin-left: auto;
+}
+
 .row {
 	display: flex;
 	flex-wrap: wrap;
+	gap: var(--gutter-x) var(--gutter-y);
 }
 
 $columns: 12;
