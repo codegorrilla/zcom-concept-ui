@@ -1,6 +1,23 @@
 @use 'abstracts' as *;
 
-main {
-	width: 1400px;
-	margin: 0 auto;
+h2,
+h3 {
+  padding: 0.75rem 0;
+  font-family: 'Poppins';
+  font-size: 2rem;
+  font-weight: normal;
+  color: var(--titleTextColor);
+  text-align: left;
+}
+
+h3 {
+  font-size: 1.333rem;
+}
+
+p {
+  font-family: 'Nunito';
+  font-weight: normal;
+  font-size: 1rem;
+  text-align: left;
+  color: var(--baseTextColor);
 }

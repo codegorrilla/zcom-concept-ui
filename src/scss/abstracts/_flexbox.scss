@@ -1,84 +1,90 @@
 //all flexbox related attributes
 .d-flex {
-	display: flex;
+  display: flex;
+  flex-wrap: wrap;
 
-	//flex direction
-	.flex-dir-r {
-		flex-direction: row;
-	}
+  .flex-wrr {
+    //flex wrap reverse
+    flex-wrap: wrap-reverse;
+  }
 
-	.flex-dir-rr {
-		flex-direction: row-reverse;
-	}
+  //flex direction
+  .flex-dir-r {
+    flex-direction: row;
+  }
 
-	.flex-dir-c {
-		flex-direction: column;
-	}
+  .flex-dir-rr {
+    flex-direction: row-reverse;
+  }
 
-	.flex-dir-cr {
-		flex-direction: column-reverse;
-	}
+  .flex-dir-c {
+    flex-direction: column;
+  }
 
-	//justify content (horizontally)
-	.flex-jc-st {
-		justify-content: flex-start;
-	}
+  .flex-dir-cr {
+    flex-direction: column-reverse;
+  }
 
-	.flex-jc-end {
-		justify-content: flex-end;
-	}
+  //justify content (horizontally)
+  .flex-jc-st {
+    justify-content: flex-start;
+  }
 
-	.flex-jc-mid {
-		justify-content: center;
-	}
+  .flex-jc-end {
+    justify-content: flex-end;
+  }
 
-	.flex-jc-spb {
-		justify-content: space-between;
-	}
+  .flex-jc-mid {
+    justify-content: center;
+  }
 
-	.flex-jc-spa {
-		justify-content: space-around;
-	}
+  .flex-jc-spb {
+    justify-content: space-between;
+  }
 
-	.flex-jc-spe {
-		justify-content: space-evenly;
-	}
+  .flex-jc-spa {
+    justify-content: space-around;
+  }
 
-	//align content (vertically)
-	.flex-ac-st {
-		align-content: flex-start;
-	}
+  .flex-jc-spe {
+    justify-content: space-evenly;
+  }
 
-	.flex-ac-end {
-		align-content: flex-end;
-	}
+  //align content (vertically)
+  .flex-ac-st {
+    align-content: flex-start;
+  }
 
-	.flex-ac-cen {
-		align-content: center;
-	}
+  .flex-ac-end {
+    align-content: flex-end;
+  }
 
-	.flex-ac-spb {
-		align-content: space-between;
-	}
+  .flex-ac-cen {
+    align-content: center;
+  }
 
-	.flex-ac-spa {
-		align-content: space-around;
-	}
+  .flex-ac-spb {
+    align-content: space-between;
+  }
 
-	.flex-ac-spe {
-		align-content: space-evenly;
-	}
+  .flex-ac-spa {
+    align-content: space-around;
+  }
 
-	//align items => vertically aligning individual items inside a grid and flexbox container
-	.flex-ai-st {
-		align-items: flex-start;
-	}
+  .flex-ac-spe {
+    align-content: space-evenly;
+  }
 
-	.flex-ai-end {
-		align-items: flex-end;
-	}
+  //align items => vertically aligning individual items inside a grid and flexbox container
+  .flex-ai-st {
+    align-items: flex-start;
+  }
 
-	.flex-ai-cen {
-		align-items: center;
-	}
+  .flex-ai-end {
+    align-items: flex-end;
+  }
+
+  .flex-ai-cen {
+    align-items: center;
+  }
 }

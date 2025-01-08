@@ -1,29 +1,30 @@
 :root {
-	--basebgColor: #fff;
-	--basefgColor: #f2f5f7;
-	--black: #1e1e1e;
-	--grey: #b1b1b1;
-	--blue: #000dff;
-	--green: #007f06;
-	--baseTextColor: #000;
-	--activePaneDarkColor: #1e1e1e;
-	--greenPill: #6fcf85;
-	--redPill: #fbbdbd;
+  --basebgColor: #fff;
+  --basefgColor: #f2f5f7;
+  --black: #1e1e1e;
+  --grey: #b1b1b1;
+  --blue: #000dff;
+  --green: #007f06;
+  --baseTextColor: #000;
+  --titleTextColor: #060606;
+  --activePaneDarkColor: #1e1e1e;
+  --greenPill: #6fcf85;
+  --redPill: #fbbdbd;
 }
 
 html,
 body {
-	background-color: var(--basebgColor);
+  background-color: var(--basebgColor);
 }
 
 //main header navigation and right sidebar
 nav,
 aside {
-	background-color: var(--basefgColor);
+  background-color: var(--basefgColor);
 }
 
 article,
 p,
 span {
-	color: var(--baseTextColor);
+  color: var(--baseTextColor);
 }

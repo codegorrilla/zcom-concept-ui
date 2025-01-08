@@ -1,0 +1,40 @@
+//generic img container prop.
+.rounded {
+  img {
+    width: 100%;
+    border-radius: 6px;
+    object-fit: cover;
+    object-position: center;
+  }
+}
+
+//hero section
+.hero-img {
+  width: 100%;
+}
+
+//author summary pane
+.author-detail {
+  width: 100%;
+  padding: 0.55rem 0;
+  font-family: 'Poppins';
+  font-size: 1.1rem;
+  text-align: left;
+  color: var(--baseTextColor);
+
+  .author-name {
+    margin-right: 0.2rem;
+    color: var(--blue);
+
+    &:hover,
+    &:focus {
+      text-decoration: underline;
+    }
+  }
+
+  .art-date {
+    margin-left: 0.2rem;
+    padding-top: 0.1rem;
+    color: inherit;
+  }
+}
