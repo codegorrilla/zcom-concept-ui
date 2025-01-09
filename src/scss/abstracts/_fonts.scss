@@ -1,11 +1,18 @@
 //Poppins regular
 @font-face {
-	font-family: 'Poppins';
-	src: local('Poppins'), url('../fonts/Poppins.ttf') format('truetype');
+  font-family: 'Poppins';
+  src: local('Poppins'), url('../fonts/Poppins.ttf') format('truetype');
+}
+
+//Poppins bold
+@font-face {
+  font-family: 'Poppins-bold';
+  src: local('Poppins-Bold'),
+    url('../fonts/Poppins-Bold.ttf') format('truetype');
 }
 
 //Nunito regular
 @font-face {
-	font-family: 'Nunito';
-	src: local('Nunito'), url('../fonts/Nunito.ttf') format('truetype');
+  font-family: 'Nunito';
+  src: local('Nunito'), url('../fonts/Nunito.ttf') format('truetype');
 }

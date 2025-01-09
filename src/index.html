@@ -127,7 +127,7 @@
         <!-- right sidebar -->
         <aside
           id="sidebar"
-          class="col-lg-3 col-sm-12 d-flex"
+          class="col-lg-3 col-sm-12"
         >
           <!-- accordion -->
           <div class="widget">
@@ -136,7 +136,34 @@
               <div class="accordion-item">
                 <div
                   class="accordion-header active"
-                  data-target="pane-1"
+                  data-target="dow"
+                >
+                  <table class="mkt-data">
+                    <tr>
+                      <th class="caret">
+                        <img
+                          src="./img/caret.svg"
+                          alt="caret"
+                        />
+                      </th>
+                      <th>DOW</th>
+                      <th>43,297.03</th>
+                      <th>+390.08</th>
+                      <th>+0.91%</th>
+                    </tr>
+                  </table>
+                </div>
+                <div
+                  id="dow"
+                  class="accordion-content active"
+                >
+                  <img src="./img/chart_img.jpg" />
+                </div>
+              </div>
+              <div class="accordion-item">
+                <div
+                  class="accordion-header"
+                  data-target="nasdaq"
                 >
                   <table class="mkt-data">
                     <tr>
@@ -154,16 +181,16 @@
                   </table>
                 </div>
                 <div
-                  id="pane-1"
-                  class="accordion-content active"
+                  id="nasdaq"
+                  class="accordion-content"
                 >
-                  content-1
+                  <img src="./img/chart-img-2.png" />
                 </div>
               </div>
               <div class="accordion-item">
                 <div
                   class="accordion-header"
-                  data-target="pane-2"
+                  data-target="sp"
                 >
                   <table class="mkt-data">
                     <tr>
@@ -181,10 +208,10 @@
                   </table>
                 </div>
                 <div
-                  id="pane-2"
+                  id="sp"
                   class="accordion-content"
                 >
-                  content-2
+                  <img src="./img/chart-img-3.png" />
                 </div>
               </div>
             </div>
@@ -194,24 +221,18 @@
           <div class="widget transparent">
             <h3 class="widget-title">trending topics</h3>
             <div class="widget-body">
-              <div class="tabs">
+              <div class="tabs d-flex flex-jc-spa">
                 <div
-                  class="tab active"
+                  class="flex-b-50 tab active"
                   data-target="tab1"
                 >
-                  Tab 1
+                  latest
                 </div>
                 <div
-                  class="tab"
+                  class="flex-b-50 tab"
                   data-target="tab2"
                 >
-                  Tab 2
-                </div>
-                <div
-                  class="tab"
-                  data-target="tab3"
-                >
-                  Tab 3
+                  popular
                 </div>
               </div>
 
@@ -220,19 +241,35 @@
                   id="tab1"
                   class="tab-content active"
                 >
-                  Content for Tab 1
+                  <ul>
+                    <li>Famed Santa Claus Rally Begins: Stocks to...</li>
+                    <li>New Strong Buy Stocks for December 24th...</li>
+                    <li>Top Stock Reports for T-Mobile, Toyota Motor...</li>
+                    <li>
+                      AWS 12/24: Xmas Eve Pre-Markets Mixed (Red & Green)...
+                    </li>
+                    <li>
+                      PFP 12/24: Stocks Closed Mostly Higher to Start
+                      Christmas...
+                    </li>
+                  </ul>
                 </div>
                 <div
                   id="tab2"
-                  class="tab-content"
+                  class="tab-content scrollable"
                 >
-                  Content for Tab 2
-                </div>
-                <div
-                  id="tab3"
-                  class="tab-content"
-                >
-                  Content for Tab 3
+                  <ul>
+                    <li>Famed Santa Claus Rally Begins: Stocks to...</li>
+                    <li>New Strong Buy Stocks for December 24th...</li>
+                    <li>Top Stock Reports for T-Mobile, Toyota Motor...</li>
+                    <li>
+                      AWS 12/24: Xmas Eve Pre-Markets Mixed (Red & Green)...
+                    </li>
+                    <li>
+                      PFP 12/24: Stocks Closed Mostly Higher to Start
+                      Christmas...
+                    </li>
+                  </ul>
                 </div>
               </div>
             </div>

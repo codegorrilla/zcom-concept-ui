@@ -3,88 +3,92 @@
   display: flex;
   flex-wrap: wrap;
 
-  .flex-wrr {
+  &.flex-wrr {
     //flex wrap reverse
     flex-wrap: wrap-reverse;
   }
 
   //flex direction
-  .flex-dir-r {
+  &.flex-dir-r {
     flex-direction: row;
   }
 
-  .flex-dir-rr {
+  &.flex-dir-rr {
     flex-direction: row-reverse;
   }
 
-  .flex-dir-c {
+  &.flex-dir-col {
     flex-direction: column;
   }
 
-  .flex-dir-cr {
+  &.flex-dir-colr {
     flex-direction: column-reverse;
   }
 
   //justify content (horizontally)
-  .flex-jc-st {
+  &.flex-jc-st {
     justify-content: flex-start;
   }
 
-  .flex-jc-end {
+  &.flex-jc-end {
     justify-content: flex-end;
   }
 
-  .flex-jc-mid {
+  &.flex-jc-mid {
     justify-content: center;
   }
 
-  .flex-jc-spb {
+  &.flex-jc-spb {
     justify-content: space-between;
   }
 
-  .flex-jc-spa {
+  &.flex-jc-spa {
     justify-content: space-around;
   }
 
-  .flex-jc-spe {
+  &.flex-jc-spe {
     justify-content: space-evenly;
   }
 
   //align content (vertically)
-  .flex-ac-st {
+  &.flex-ac-st {
     align-content: flex-start;
   }
 
-  .flex-ac-end {
+  &.flex-ac-end {
     align-content: flex-end;
   }
 
-  .flex-ac-cen {
+  &.flex-ac-cen {
     align-content: center;
   }
 
-  .flex-ac-spb {
+  &.flex-ac-spb {
     align-content: space-between;
   }
 
-  .flex-ac-spa {
+  &.flex-ac-spa {
     align-content: space-around;
   }
 
-  .flex-ac-spe {
+  &.flex-ac-spe {
     align-content: space-evenly;
   }
 
   //align items => vertically aligning individual items inside a grid and flexbox container
-  .flex-ai-st {
+  &.flex-ai-st {
     align-items: flex-start;
   }
 
-  .flex-ai-end {
+  &.flex-ai-end {
     align-items: flex-end;
   }
 
-  .flex-ai-cen {
+  &.flex-ai-cen {
     align-items: center;
+  }
+
+  .flex-b-50 {
+    flex-basis: 50%;
   }
 }
