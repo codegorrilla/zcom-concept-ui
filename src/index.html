@@ -15,6 +15,7 @@
   <body>
     <main class="container">
       <section class="row">
+        <!-- main content area -->
         <div class="col-lg-9 col-md-12 col-sm-12 d-flex">
           <div class="col-lg-6 col-sm-12">
             <figure class="hero-img rounded">
@@ -37,15 +38,83 @@
                 class="author-name"
                 >Andrew Rocco</a
               >
-              |
-              <p class="art-date">December 20, 2024</p>
+              <p class="art-date">&nbsp;December 20, 2024</p>
             </div>
           </div>
-          <div class="col-lg-3 col-sm-12">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis
-            magnam soluta veniam voluptatem ratione velit sed ipsa aliquid sequi
-            quos accusantium excepturi cupiditate et, doloribus, cum, aperiam
-            nihil minima commodi.
+          <div class="col-lg-3 col-sm-12 stacked-art-sm">
+            <article>
+              <figure class="hero-img rounded">
+                <img
+                  src="./img/1969.jpg"
+                  alt="Hero"
+                />
+              </figure>
+              <h3>
+                Will Santa Claus Rally Set In for 2024? 4 Best ETF Areas to
+                Explore
+              </h3>
+              <div class="author-detail d-flex">
+                <a
+                  href="#"
+                  class="author-name"
+                  >Sanghamitra Saha</a
+                >
+                <p class="art-date">December 20, 2024</p>
+              </div>
+            </article>
+
+            <article>
+              <h3>2024 Value Stock Winners: What's Next?</h3>
+              <div class="author-detail d-flex">
+                <a
+                  href="#"
+                  class="author-name"
+                  >Tracey Ryniec</a
+                >
+                <p class="art-date">December 26, 2024</p>
+              </div>
+            </article>
+
+            <article>
+              <h3>
+                PCE Cools in November; Are We Getting an Xmas Government
+                Shutdown?
+              </h3>
+              <div class="author-detail d-flex">
+                <a
+                  href="#"
+                  class="author-name"
+                  >Mark Vickery </a
+                >
+                <p class="art-date">December 20, 2024</p>
+              </div>
+            </article>
+
+            <article>
+              <h3>2025 Picks: 2 Stocks to Buy Now for 50% Upside</h3>
+              <div class="author-detail d-flex">
+                <a
+                  href="#"
+                  class="author-name"
+                  >Benjamin Rains</a
+                >
+                <p class="art-date">December 20, 2024</p>
+              </div>
+            </article>
+
+            <article>
+              <h3>
+                Christmas Dip: 3 Top Ranked Stocks to Buy Now (TSLA, VRT, PLTR)
+              </h3>
+              <div class="author-detail d-flex">
+                <a
+                  href="#"
+                  class="author-name"
+                  >Ethan Feller</a
+                >
+                <p class="art-date">December 20, 2024</p>
+              </div>
+            </article>
           </div>
           <div class="col-lg-3 col-sm-12">
             Lorem ipsum dolor, sit amet consectetur adipisicing elit. Tenetur
@@ -54,11 +123,120 @@
             perspiciatis eaque sunt quidem!
           </div>
         </div>
-        <aside class="col-lg-3 col-sm-12 d-flex">
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae
-          praesentium exercitationem velit, in quam commodi pariatur rem ab
-          porro sed inventore officia, minus libero quod odit laboriosam, quidem
-          suscipit placeat?
+
+        <!-- right sidebar -->
+        <aside
+          id="sidebar"
+          class="col-lg-3 col-sm-12 d-flex"
+        >
+          <!-- accordion -->
+          <div class="widget">
+            <h3 class="widget-title">market summary</h3>
+            <div class="widget-body">
+              <div class="accordion-item">
+                <div
+                  class="accordion-header active"
+                  data-target="pane-1"
+                >
+                  <table class="mkt-data">
+                    <tr>
+                      <th class="caret">
+                        <img
+                          src="./img/caret.svg"
+                          alt="caret"
+                        />
+                      </th>
+                      <th>NASDAQ</th>
+                      <th>20,031.13</th>
+                      <th class="green">+266.24</th>
+                      <th class="green">+1.35%</th>
+                    </tr>
+                  </table>
+                </div>
+                <div
+                  id="pane-1"
+                  class="accordion-content active"
+                >
+                  content-1
+                </div>
+              </div>
+              <div class="accordion-item">
+                <div
+                  class="accordion-header"
+                  data-target="pane-2"
+                >
+                  <table class="mkt-data">
+                    <tr>
+                      <th class="caret">
+                        <img
+                          src="./img/caret.svg"
+                          alt="caret"
+                        />
+                      </th>
+                      <th>S&amp;P 500</th>
+                      <th>6,040.04</th>
+                      <th class="green">+65.97</th>
+                      <th class="green">+1.10%</th>
+                    </tr>
+                  </table>
+                </div>
+                <div
+                  id="pane-2"
+                  class="accordion-content"
+                >
+                  content-2
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- tabs -->
+          <div class="widget transparent">
+            <h3 class="widget-title">trending topics</h3>
+            <div class="widget-body">
+              <div class="tabs">
+                <div
+                  class="tab active"
+                  data-target="tab1"
+                >
+                  Tab 1
+                </div>
+                <div
+                  class="tab"
+                  data-target="tab2"
+                >
+                  Tab 2
+                </div>
+                <div
+                  class="tab"
+                  data-target="tab3"
+                >
+                  Tab 3
+                </div>
+              </div>
+
+              <div class="tab-contents">
+                <div
+                  id="tab1"
+                  class="tab-content active"
+                >
+                  Content for Tab 1
+                </div>
+                <div
+                  id="tab2"
+                  class="tab-content"
+                >
+                  Content for Tab 2
+                </div>
+                <div
+                  id="tab3"
+                  class="tab-content"
+                >
+                  Content for Tab 3
+                </div>
+              </div>
+            </div>
+          </div>
         </aside>
       </section>
     </main>
