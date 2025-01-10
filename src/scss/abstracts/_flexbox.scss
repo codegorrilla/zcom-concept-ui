@@ -92,3 +92,17 @@
     flex-basis: 50%;
   }
 }
+
+//custom padding and margin control
+.py-0 {
+  padding-top: 0;
+  padding-bottom: 0;
+}
+
+.py-0-st {
+  padding-top: 0;
+}
+
+.py-0-end {
+  padding-bottom: 0;
+}

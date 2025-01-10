@@ -16,3 +16,41 @@
   font-family: 'Nunito';
   src: local('Nunito'), url('../fonts/Nunito.ttf') format('truetype');
 }
+
+h2,
+h3 {
+  padding: 0.75rem 0;
+  font-family: 'Poppins';
+  font-size: 2rem;
+  font-weight: normal;
+  color: var(--titleTextColor);
+  text-align: left;
+
+  //color presets
+  &.green {
+    color: var(--green);
+  }
+
+  //text style presets => ps: pascal case
+  &.ps {
+    text-transform: capitalize;
+  }
+}
+
+h3 {
+  font-size: 1.2rem;
+  line-height: 1.4;
+
+  &.header-bold {
+    font-family: 'Poppins-bold';
+    font-size: 1.125rem;
+  }
+}
+
+p {
+  font-family: 'Nunito';
+  font-weight: normal;
+  font-size: 1rem;
+  text-align: left;
+  color: var(--baseTextColor);
+}

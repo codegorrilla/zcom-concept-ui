@@ -65,6 +65,10 @@
     padding-bottom: 0.113rem;
     border-bottom: 1px solid var(--stackedArtBorder);
 
+    &:last-of-type {
+      border-bottom: none;
+    }
+
     h3 {
       margin: 0;
       padding-bottom: 0;
@@ -83,6 +87,10 @@
         }
       }
     }
+  }
+
+  & + .stacked-art-sm {
+    border-left: 1px solid var(--stackedArtBorder);
   }
 }
 
@@ -295,4 +303,69 @@ aside {
 
 ::-webkit-scrollbar-thumb:hover {
   background: var(--black); /* Color on hover */
+}
+
+//pills
+.pill-hive {
+  width: 100%;
+  margin-top: 0.3rem;
+  padding: 0.11rem 0 0.82rem 0;
+
+  .pill {
+    min-width: 30px;
+    height: 20px;
+    margin: 0 0.11rem;
+    padding: 0.111rem;
+    border-radius: 4px;
+    font-family: 'Poppins';
+    font-size: 0.563rem;
+    color: var(--baseTextColor);
+    text-align: center;
+    text-transform: uppercase;
+
+    &.green {
+      background-color: var(--greenPillFill);
+      border: 1px solid var(--greenPillStroke);
+    }
+
+    &.red {
+      background-color: var(--redPillFill);
+      border: 1px solid var(--redPillStroke);
+      position: relative;
+      top: -0.05rem;
+      line-height: 1.6;
+    }
+  }
+}
+
+//link
+.link {
+  width: 100%;
+  padding: 0.5rem 0;
+  border-top: 1px solid var(--stackedArtBorder);
+  display: inline-block;
+
+  span {
+    float: left;
+    font-family: 'Poppins';
+    font-size: 0.75rem;
+    text-align: left;
+    text-transform: capitalize;
+    color: var(--baseTextColor);
+  }
+
+  &:hover,
+  &:focus {
+    span {
+      text-decoration: underline;
+    }
+  }
+
+  img {
+    float: left;
+    width: 7px;
+    height: 6px;
+    margin-left: 0.4rem;
+    margin-top: 0.4rem;
+  }
 }
