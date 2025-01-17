@@ -1,108 +1,113 @@
 //all flexbox related attributes
 .d-flex {
-  display: flex;
-  flex-wrap: wrap;
+	display: flex;
+	flex-wrap: wrap;
 
-  &.flex-wrr {
-    //flex wrap reverse
-    flex-wrap: wrap-reverse;
-  }
+	&.flex-wrr {
+		//flex wrap reverse
+		flex-wrap: wrap-reverse;
+	}
 
-  //flex direction
-  &.flex-dir-r {
-    flex-direction: row;
-  }
+	//flex direction
+	&.flex-dir-r {
+		flex-direction: row;
+	}
 
-  &.flex-dir-rr {
-    flex-direction: row-reverse;
-  }
+	&.flex-dir-rr {
+		flex-direction: row-reverse;
+	}
 
-  &.flex-dir-col {
-    flex-direction: column;
-  }
+	&.flex-dir-col {
+		flex-direction: column;
+	}
 
-  &.flex-dir-colr {
-    flex-direction: column-reverse;
-  }
+	&.flex-dir-colr {
+		flex-direction: column-reverse;
+	}
 
-  //justify content (horizontally)
-  &.flex-jc-st {
-    justify-content: flex-start;
-  }
+	//justify content (horizontally)
+	&.flex-jc-st {
+		justify-content: flex-start;
+	}
 
-  &.flex-jc-end {
-    justify-content: flex-end;
-  }
+	&.flex-jc-end {
+		justify-content: flex-end;
+	}
 
-  &.flex-jc-mid {
-    justify-content: center;
-  }
+	&.flex-jc-mid {
+		justify-content: center;
+	}
 
-  &.flex-jc-spb {
-    justify-content: space-between;
-  }
+	&.flex-jc-spb {
+		justify-content: space-between;
+	}
 
-  &.flex-jc-spa {
-    justify-content: space-around;
-  }
+	&.flex-jc-spa {
+		justify-content: space-around;
+	}
 
-  &.flex-jc-spe {
-    justify-content: space-evenly;
-  }
+	&.flex-jc-spe {
+		justify-content: space-evenly;
+	}
 
-  //align content (vertically)
-  &.flex-ac-st {
-    align-content: flex-start;
-  }
+	//align content (vertically)
+	&.flex-ac-st {
+		align-content: flex-start;
+	}
 
-  &.flex-ac-end {
-    align-content: flex-end;
-  }
+	&.flex-ac-end {
+		align-content: flex-end;
+	}
 
-  &.flex-ac-cen {
-    align-content: center;
-  }
+	&.flex-ac-cen {
+		align-content: center;
+	}
 
-  &.flex-ac-spb {
-    align-content: space-between;
-  }
+	&.flex-ac-spb {
+		align-content: space-between;
+	}
 
-  &.flex-ac-spa {
-    align-content: space-around;
-  }
+	&.flex-ac-spa {
+		align-content: space-around;
+	}
 
-  &.flex-ac-spe {
-    align-content: space-evenly;
-  }
+	&.flex-ac-spe {
+		align-content: space-evenly;
+	}
 
-  //align items => vertically aligning individual items inside a grid and flexbox container
-  &.flex-ai-st {
-    align-items: flex-start;
-  }
+	//align items => vertically aligning individual items inside a grid and flexbox container
+	&.flex-ai-st {
+		align-items: flex-start;
+	}
 
-  &.flex-ai-end {
-    align-items: flex-end;
-  }
+	&.flex-ai-end {
+		align-items: flex-end;
+	}
 
-  &.flex-ai-cen {
-    align-items: center;
-  }
+	&.flex-ai-cen {
+		align-items: center;
+	}
 
-  .flex-b-50 {
-    flex-basis: 50%;
-  }
+	.flex-b-50 {
+		flex-basis: 50%;
+	}
+
+	//flex basis => used in instances where a row container needs to occupy the available full-width
+	.flex-b-100 {
+		flex-basis: 100%;
+	}
 }
 
 //custom padding and margin control
 .py-0 {
-  padding-top: 0;
-  padding-bottom: 0;
+	padding-top: 0;
+	padding-bottom: 0;
 }
 
 .py-0-st {
-  padding-top: 0;
+	padding-top: 0;
 }
 
 .py-0-end {
-  padding-bottom: 0;
+	padding-bottom: 0;
 }

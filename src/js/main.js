@@ -1,9 +1,11 @@
 import '../scss/styles.scss';
 
 import { setAccordion } from './accordion';
-import { setTabs } from './tab';
+import { trending_tabs } from './tab';
+//import { dup_tabs } from './tab';
 import { setScroll } from './scroll';
 
 setAccordion();
-setTabs();
+trending_tabs();
+//dup_tabs();
 setScroll();

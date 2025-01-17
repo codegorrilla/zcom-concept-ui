@@ -96,11 +96,56 @@
 	}
 }
 
+//title pane
+.title-pane {
+	margin: 1rem 0;
+	padding: 0.3rem;
+	border-radius: 4px;
+	font-family: 'Poppins-bold';
+	font-size: 1rem;
+	text-align: left;
+	text-transform: capitalize;
+	color: var(--basebgColor);
+
+	&.green-bg {
+		background-color: var(--green);
+	}
+}
+
+.featured-tickers {
+	font-size: 1.5rem;
+	text-transform: capitalize;
+
+	.ticker-label {
+		padding: 0.1rem 0;
+		font-family: 'Poppins-bold';
+		font-size: inherit;
+		text-align: left;
+	}
+
+	.ticker-name {
+		padding: 0 0 0.5rem 0;
+		font-family: 'Poppins';
+		font-size: 1.1rem;
+	}
+
+	.ticker-info {
+		padding-bottom: 0.75rem;
+	}
+}
+
 //sidebar
 aside {
 	&#sidebar {
 		background-color: var(--basefgColor);
 		border-left: 1px solid var(--stackedArtBorder);
+
+		//aligning all links in the right sidebar to the right side
+		.link {
+			span {
+				float: right;
+			}
+		}
 	}
 }
 
@@ -251,12 +296,35 @@ aside {
 	}
 }
 
-.tab-contents {
+.tabs-dup {
+	.tab-dup {
+		cursor: pointer;
+		padding: 0.8rem 1.113rem;
+		border-radius: 4px;
+		border-bottom-left-radius: 0;
+		border-bottom-right-radius: 0;
+		background-color: transparent;
+		font-family: 'Poppins';
+		font-size: 1rem;
+		color: var(--baseTextColor);
+		text-align: center;
+		text-transform: capitalize;
+
+		&.active {
+			background-color: var(--basebgColor);
+			border-top: 1px solid var(--baseTextColor);
+		}
+	}
+}
+
+.tab-contents,
+.tabs-dup-contents {
 	padding: 0.5rem 0;
 	padding-right: 0.5rem;
 	background-color: var(--basebgColor);
 
-	.tab-content {
+	.tab-content,
+	.tab-dup-content {
 		display: none;
 		padding: 0.5rem;
 		height: 180px;
@@ -353,7 +421,7 @@ aside {
 		font-size: 0.75rem;
 		text-align: left;
 		text-transform: capitalize;
-		color: var(--baseTextColor);
+		color: var(--blue);
 	}
 
 	&:hover,
@@ -402,6 +470,7 @@ aside {
 					}
 
 					&.text-col {
+						padding-left: 0.3rem;
 						text-align: left;
 
 						&:first-of-type {
@@ -414,7 +483,50 @@ aside {
 							display: inline-block;
 							width: 24px;
 							height: 24px;
+							margin-top: 0.4rem;
 							text-align: right;
+						}
+
+						&.doc,
+						&.shot {
+							&:hover a {
+								img {
+									display: none;
+								}
+							}
+						}
+
+						&.doc {
+							&:hover a {
+								background-image: url(../img/doc_icon_hover.svg);
+								background-repeat: no-repeat;
+							}
+						}
+
+						&.shot {
+							&:hover a {
+								background-image: url(../img/shot_icon_hover.svg);
+								background-repeat: no-repeat;
+							}
+						}
+					}
+
+					&.num-col {
+						&.plus {
+							color: var(--green);
+						}
+
+						&.minus {
+							color: red;
+						}
+					}
+				}
+
+				//border: 0 for the cells inside last table row
+				tr {
+					&:last-of-type {
+						td {
+							border-bottom: none;
 						}
 					}
 				}
