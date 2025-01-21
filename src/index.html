@@ -2,31 +2,53 @@
 <html lang="en">
 	<head>
 		<meta charset="UTF-8" />
-		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<meta
+			name="viewport"
+			content="width=device-width, initial-scale=1.0"
+		/>
 		<title>ZCOM Concept UI</title>
-		<script type="module" src="./js/main.js"></script>
+		<script
+			type="module"
+			src="./js/main.js"
+		></script>
 	</head>
 	<body>
 		<header class="container">
 			<section class="row">
 				<div class="col-lg-9 d-flex flex-jc-st">
-					<a href="#" class="col-lg-3">
-						<img src="./img/logo-zacks.png" alt="zacks-logo" />
+					<a
+						href="#"
+						class="col-lg-3"
+					>
+						<img
+							src="./img/logo-zacks.png"
+							alt="zacks-logo"
+						/>
 					</a>
 					<div class="search-pane col-lg-3">
 						<div class="rounded">
-							<input type="text" value="" placeholder="search quote..." />
+							<input
+								type="text"
+								value=""
+								placeholder="search quote..."
+							/>
 						</div>
 						<button class="search-cta">
 							<img src="./img/search.svg" />
 						</button>
 					</div>
-					<a href="#" class="new-to-zacks col-lg-6">
-						<p
-							>new to zacks?
+					<a
+						href="#"
+						class="new-to-zacks col-lg-6"
+					>
+						<p>
+							new to zacks?
 							<span>get started here.</span>
 						</p>
-						<img src="./img/new-to-zacks.png" alt="" />
+						<img
+							src="./img/new-to-zacks.png"
+							alt=""
+						/>
 					</a>
 				</div>
 				<div class="col-lg-3 d-flex">
@@ -45,7 +67,11 @@
 				<div class="nav-wrapper d-flex">
 					<ul class="main-nav col-lg-12">
 						<li class="home active">
-							<a href="#" title="Home">Home</a>
+							<a
+								href="#"
+								title="Home"
+								>Home</a
+							>
 						</li>
 						<li class="dropdown">
 							<button class="down-arrow">stocks</button>
@@ -132,14 +158,50 @@
 						</li>
 						<li class="offcanvas-menu-btn">
 							<button>services</button>
-							<div class="burger">
-								<span></span><span></span><span></span>
-							</div>
+							<div class="burger"><span></span><span></span><span></span></div>
 						</li>
 					</ul>
 				</div>
 			</nav>
 		</section>
+
+		<section
+			id="offcanvas-menu"
+			class="off-canvas d-flex"
+		>
+			<div class="d-flex flex-dir-col flex-b-100">
+				<button
+					id="offcanvas-close-btn"
+					title="close"
+				>
+					close
+				</button>
+				<ul>
+					<h4>services overview</h4>
+					<li class="ultimate"><a href="#"> zacks ultimate </a></li>
+					<li class="investor"><a href="#">zacks investor collection</a></li>
+				</ul>
+
+				<ul>
+					<h4>investor services</h4>
+					<li class="etf"><a href="#">etf investor</a></li>
+					<li class="homerun"><a href="#">homerun investor</a></li>
+					<li class="su10"><a href="#">stocks under $10</a></li>
+				</ul>
+
+				<ul>
+					<h4>innovators</h4>
+					<li class="ae"><a href="#">alternative energy</a></li>
+				</ul>
+
+				<ul>
+					<h4>trading services</h4>
+					<li class="sll"><a href="#">Short sell list</a></li>
+					<li class="tazr"><a href="#">TAZR</a></li>
+				</ul>
+			</div>
+		</section>
+
 		<main class="container body">
 			<section class="row">
 				<!-- main content area -->
@@ -148,7 +210,10 @@
 						<div class="col-lg-6 col-sm-12">
 							<div class="hero">
 								<figure class="hero-img rounded">
-									<img src="./img/hero.jpg" alt="Hero" />
+									<img
+										src="./img/hero.jpg"
+										alt="Hero"
+									/>
 								</figure>
 								<h2>3 Stock Trends to Ride in 2025 and Beyond</h2>
 								<p>
@@ -159,7 +224,11 @@
 									continue for the foreseeable future.
 								</p>
 								<div class="author-detail d-flex">
-									<a href="#" class="author-name">Andrew Rocco</a>
+									<a
+										href="#"
+										class="author-name"
+										>Andrew Rocco</a
+									>
 									<p class="art-date">&nbsp;December 20, 2024</p>
 								</div>
 							</div>
@@ -172,7 +241,10 @@
 									<p class="ticker-name">MasTec (MTZ)</p>
 									<article>
 										<figure class="hero-img rounded">
-											<img src="./img/5771.jpg" alt="bull" />
+											<img
+												src="./img/5771.jpg"
+												alt="bull"
+											/>
 										</figure>
 										<p class="ticker-info">
 											Positive quarterly results from MasTec have aided share
@@ -185,7 +257,10 @@
 									<p class="ticker-name">Insperity (NSP)</p>
 									<article>
 										<figure class="hero-img rounded">
-											<img src="./img/6621.jpg" alt="bull" />
+											<img
+												src="./img/6621.jpg"
+												alt="bull"
+											/>
 										</figure>
 										<p class="ticker-info">
 											Insperity, Inc. engages in the provision of human
@@ -195,7 +270,9 @@
 									</article>
 								</div>
 
-								<a href="#" class="link blue"
+								<a
+									href="#"
+									class="link blue"
 									><span>Learn to Profit from the Zacks Rank</span></a
 								>
 							</div>
@@ -203,14 +280,21 @@
 						<div class="col-lg-3 col-sm-12 stacked-art-sm">
 							<article>
 								<figure class="hero-img rounded">
-									<img src="./img/1969.jpg" alt="Hero" />
+									<img
+										src="./img/1969.jpg"
+										alt="Hero"
+									/>
 								</figure>
 								<h3>
 									Will Santa Claus Rally Set In for 2024? 4 Best ETF Areas to
 									Explore
 								</h3>
 								<div class="author-detail d-flex">
-									<a href="#" class="author-name">Sanghamitra Saha</a>
+									<a
+										href="#"
+										class="author-name"
+										>Sanghamitra Saha</a
+									>
 									<p class="art-date">December 20, 2024</p>
 								</div>
 							</article>
@@ -218,7 +302,11 @@
 							<article>
 								<h3>2024 Value Stock Winners: What's Next?</h3>
 								<div class="author-detail d-flex">
-									<a href="#" class="author-name">Tracey Ryniec</a>
+									<a
+										href="#"
+										class="author-name"
+										>Tracey Ryniec</a
+									>
 									<p class="art-date">December 26, 2024</p>
 								</div>
 							</article>
@@ -229,7 +317,11 @@
 									Shutdown?
 								</h3>
 								<div class="author-detail d-flex">
-									<a href="#" class="author-name">Mark Vickery </a>
+									<a
+										href="#"
+										class="author-name"
+										>Mark Vickery </a
+									>
 									<p class="art-date">December 20, 2024</p>
 								</div>
 							</article>
@@ -237,7 +329,11 @@
 							<article>
 								<h3>2025 Picks: 2 Stocks to Buy Now for 50% Upside</h3>
 								<div class="author-detail d-flex">
-									<a href="#" class="author-name">Benjamin Rains</a>
+									<a
+										href="#"
+										class="author-name"
+										>Benjamin Rains</a
+									>
 									<p class="art-date">December 20, 2024</p>
 								</div>
 							</article>
@@ -248,12 +344,18 @@
 									PLTR)
 								</h3>
 								<div class="author-detail d-flex">
-									<a href="#" class="author-name">Ethan Feller</a>
+									<a
+										href="#"
+										class="author-name"
+										>Ethan Feller</a
+									>
 									<p class="art-date">December 20, 2024</p>
 								</div>
 							</article>
 
-							<a href="#" class="link"
+							<a
+								href="#"
+								class="link"
 								><span>view more</span><img src="./img/arrow-right.svg"
 							/></a>
 						</div>
@@ -264,14 +366,30 @@
 									Is Sterling Stock Worth Buying at Premium P/E Valuation?
 								</h3>
 								<div class="author-detail d-flex">
-									<a href="#" class="author-name">Shrabana Mukherjee</a>
+									<a
+										href="#"
+										class="author-name"
+										>Shrabana Mukherjee</a
+									>
 									<p class="art-date">December 26, 2024</p>
 								</div>
 
 								<div class="pill-hive d-flex">
-									<a href="#" class="pill green">dy</a>
-									<a href="#" class="pill green">fix</a>
-									<a href="#" class="pill green">strl</a>
+									<a
+										href="#"
+										class="pill green"
+										>dy</a
+									>
+									<a
+										href="#"
+										class="pill green"
+										>fix</a
+									>
+									<a
+										href="#"
+										class="pill green"
+										>strl</a
+									>
 								</div>
 							</article>
 
@@ -281,13 +399,29 @@
 									YTD?
 								</h3>
 								<div class="author-detail d-flex">
-									<a href="#" class="author-name">Anirudha Bhagat </a>
+									<a
+										href="#"
+										class="author-name"
+										>Anirudha Bhagat </a
+									>
 									<p class="art-date">December 23, 2024</p>
 								</div>
 								<div class="pill-hive d-flex">
-									<a href="#" class="pill green">tol</a>
-									<a href="#" class="pill green">gap</a>
-									<a href="#" class="pill green">POWL</a>
+									<a
+										href="#"
+										class="pill green"
+										>tol</a
+									>
+									<a
+										href="#"
+										class="pill green"
+										>gap</a
+									>
+									<a
+										href="#"
+										class="pill green"
+										>POWL</a
+									>
 								</div>
 							</article>
 
@@ -297,26 +431,54 @@
 									Homebuilders?
 								</h3>
 								<div class="author-detail d-flex">
-									<a href="#" class="author-name">Sraddha Singha </a>
+									<a
+										href="#"
+										class="author-name"
+										>Sraddha Singha </a
+									>
 									<p class="art-date">December 23, 2024</p>
 								</div>
 								<div class="pill-hive d-flex">
-									<a href="#" class="pill green">nvr</a>
-									<a href="#" class="pill green">tph</a>
-									<a href="#" class="pill green">tmhc</a>
+									<a
+										href="#"
+										class="pill green"
+										>nvr</a
+									>
+									<a
+										href="#"
+										class="pill green"
+										>tph</a
+									>
+									<a
+										href="#"
+										class="pill green"
+										>tmhc</a
+									>
 								</div>
 							</article>
 
 							<article>
 								<h3>3 Stocks to Watch From a Prospering Cable TV</h3>
 								<div class="author-detail d-flex">
-									<a href="#" class="author-name">Vasundhara Sawalka</a>
+									<a
+										href="#"
+										class="author-name"
+										>Vasundhara Sawalka</a
+									>
 									<p class="art-date">December 23, 2024</p>
 								</div>
 
 								<div class="pill-hive d-flex">
-									<a href="#" class="pill green">rci</a>
-									<a href="#" class="pill red">CHTR</a>
+									<a
+										href="#"
+										class="pill green"
+										>rci</a
+									>
+									<a
+										href="#"
+										class="pill red"
+										>CHTR</a
+									>
 								</div>
 							</article>
 
@@ -326,13 +488,29 @@
 									Investors
 								</h3>
 								<div class="author-detail d-flex">
-									<a href="#" class="author-name">Aparajita Dutta</a>
+									<a
+										href="#"
+										class="author-name"
+										>Aparajita Dutta</a
+									>
 									<p class="art-date">December 23, 2024</p>
 								</div>
 								<div class="pill-hive d-flex">
-									<a href="#" class="pill green">frpt</a>
-									<a href="#" class="pill red">fix</a>
-									<a href="#" class="pill green">strl</a>
+									<a
+										href="#"
+										class="pill green"
+										>frpt</a
+									>
+									<a
+										href="#"
+										class="pill red"
+										>fix</a
+									>
+									<a
+										href="#"
+										class="pill green"
+										>strl</a
+									>
 								</div>
 							</article>
 						</div>
@@ -343,6 +521,367 @@
 								<h3 class="header-bold green">
 									Zacks #1 Rank top movers for Dec 24, 2024
 								</h3>
+								<!-- tabs -->
+								<div
+									id="top_movers"
+									class="widget transparent"
+								>
+									<div class="widget-body">
+										<div class="tabs d-flex flex-jc-spa">
+											<div
+												class="flex-b-20 tab active"
+												data-target="value"
+											>
+												value
+											</div>
+											<div
+												class="flex-b-20 tab"
+												data-target="growth"
+											>
+												growth
+											</div>
+											<div
+												class="flex-b-20 tab"
+												data-target="momentum"
+											>
+												momentum
+											</div>
+											<div
+												class="flex-b-20 tab"
+												data-target="vgm"
+											>
+												VGM
+											</div>
+											<div
+												class="flex-b-20 tab"
+												data-target="income"
+											>
+												income
+											</div>
+										</div>
+
+										<div class="tab-contents">
+											<div
+												id="value"
+												class="tab-content active"
+											>
+												<div class="widget">
+													<div class="widget-body table-wrapper">
+														<table class="table border-cell compact">
+															<thead>
+																<tr>
+																	<th class="text-col">company</th>
+																	<th class="text-col">symbol</th>
+																	<th class="num-col">price</th>
+																	<th class="num-col">%chg</th>
+																</tr>
+															</thead>
+															<tbody>
+																<tr>
+																	<td class="text-col">Synchronoss...</td>
+																	<td class="text-col">SNCR</td>
+																	<td class="num-col">10.17</td>
+																	<td class="num-col plus">+10.91%</td>
+																</tr>
+																<tr>
+																	<td class="text-col">weibo</td>
+																	<td class="text-col">wb</td>
+																	<td class="num-col">9.73</td>
+																	<td class="num-col plus">+3.84%</td>
+																</tr>
+																<tr>
+																	<td class="text-col">greenland t...</td>
+																	<td class="text-col">gtec</td>
+																	<td class="num-col">2.27</td>
+																	<td class="num-col plus">+3.65%</td>
+																</tr>
+																<tr>
+																	<td class="text-col">qifu techno...</td>
+																	<td class="text-col">qfin</td>
+																	<td class="num-col">38.37</td>
+																	<td class="num-col plus">+3.59%</td>
+																</tr>
+															</tbody>
+															<tfoot>
+																<tr>
+																	<td colspan="5">
+																		<a
+																			href="#"
+																			class="link"
+																			><img src="./img/arrow-white.svg" /><span
+																				>View All zacks #1 rank value
+																				stocks</span
+																			></a
+																		>
+																	</td>
+																</tr>
+															</tfoot>
+														</table>
+													</div>
+												</div>
+											</div>
+											<div
+												id="growth"
+												class="tab-content"
+											>
+												<div class="widget">
+													<div class="widget-body table-wrapper">
+														<table class="table border-cell compact">
+															<thead>
+																<tr>
+																	<th class="text-col">company</th>
+																	<th class="text-col">symbol</th>
+																	<th class="num-col">price</th>
+																	<th class="num-col">%chg</th>
+																</tr>
+															</thead>
+															<tbody>
+																<tr>
+																	<td class="text-col">rigel pharm...</td>
+																	<td class="text-col">rigl</td>
+																	<td class="num-col">20.13</td>
+																	<td class="num-col plus">+16.02</td>
+																</tr>
+																<tr>
+																	<td class="text-col">palantir te...</td>
+																	<td class="text-col">pltr</td>
+																	<td class="num-col">71.77</td>
+																	<td class="num-col plus">+3.65%</td>
+																</tr>
+																<tr>
+																	<td class="text-col">greenland t...</td>
+																	<td class="text-col">gtec</td>
+																	<td class="num-col">2.27</td>
+																	<td class="num-col plus">+3.65%</td>
+																</tr>
+																<tr>
+																	<td class="text-col">dxp enterpr...</td>
+																	<td class="text-col">dxpe</td>
+																	<td class="num-col">102.67</td>
+																	<td class="num-col plus">+3.29%</td>
+																</tr>
+																<tr>
+																	<td class="text-col">applovin...</td>
+																	<td class="text-col">app</td>
+																	<td class="num-col">342.34</td>
+																	<td class="num-col plus">+3.11%</td>
+																</tr>
+															</tbody>
+															<tfoot>
+																<tr>
+																	<td colspan="5">
+																		<a
+																			href="#"
+																			class="link"
+																			><img src="./img/arrow-white.svg" /><span
+																				>View All zacks #1 rank growth
+																				stocks</span
+																			></a
+																		>
+																	</td>
+																</tr>
+															</tfoot>
+														</table>
+													</div>
+												</div>
+											</div>
+											<div
+												id="momentum"
+												class="tab-content"
+											>
+												<div class="widget">
+													<div class="widget-body table-wrapper">
+														<table class="table border-cell compact">
+															<thead>
+																<tr>
+																	<th class="text-col">company</th>
+																	<th class="text-col">symbol</th>
+																	<th class="num-col">price</th>
+																	<th class="num-col">%chg</th>
+																</tr>
+															</thead>
+															<tbody>
+																<tr>
+																	<td class="text-col">robinhood M...</td>
+																	<td class="text-col">hood</td>
+																	<td class="num-col">48.15</td>
+																	<td class="num-col plus">+4.49%</td>
+																</tr>
+																<tr>
+																	<td class="text-col">life time G...</td>
+																	<td class="text-col">LTH</td>
+																	<td class="num-col">27.67</td>
+																	<td class="num-col plus">+3.91%</td>
+																</tr>
+																<tr>
+																	<td class="text-col">urban outfi...</td>
+																	<td class="text-col">urbn</td>
+																	<td class="num-col">55.01</td>
+																	<td class="num-col plus">+3.38%</td>
+																</tr>
+																<tr>
+																	<td class="text-col">priority te...</td>
+																	<td class="text-col">prth</td>
+																	<td class="num-col">8.90</td>
+																	<td class="num-col plus">+2.77%</td>
+																</tr>
+																<tr>
+																	<td class="text-col">frontdoor</td>
+																	<td class="text-col">ftdr</td>
+																	<td class="num-col">58.53</td>
+																	<td class="num-col plus">+2.59%</td>
+																</tr>
+															</tbody>
+															<tfoot>
+																<tr>
+																	<td colspan="5">
+																		<a
+																			href="#"
+																			class="link"
+																			><img src="./img/arrow-white.svg" /><span
+																				>View All zacks #1 rank momentum
+																				stocks</span
+																			></a
+																		>
+																	</td>
+																</tr>
+															</tfoot>
+														</table>
+													</div>
+												</div>
+											</div>
+											<div
+												id="vgm"
+												class="tab-content"
+											>
+												<div class="widget">
+													<div class="widget-body table-wrapper">
+														<table class="table border-cell compact">
+															<thead>
+																<tr>
+																	<th class="text-col">company</th>
+																	<th class="text-col">symbol</th>
+																	<th class="num-col">price</th>
+																	<th class="num-col">%chg</th>
+																</tr>
+															</thead>
+															<tbody>
+																<tr>
+																	<td class="text-col">rigel pharm...</td>
+																	<td class="text-col">rigl</td>
+																	<td class="num-col">20.13</td>
+																	<td class="num-col plus">+16.02%</td>
+																</tr>
+																<tr>
+																	<td class="text-col">life time G...</td>
+																	<td class="text-col">LTH</td>
+																	<td class="num-col">27.67</td>
+																	<td class="num-col plus">+3.91%</td>
+																</tr>
+																<tr>
+																	<td class="text-col">greenland t...</td>
+																	<td class="text-col">gtec</td>
+																	<td class="num-col">2.27</td>
+																	<td class="num-col plus">+3.65%</td>
+																</tr>
+																<tr>
+																	<td class="text-col">the gap</td>
+																	<td class="text-col">gap</td>
+																	<td class="num-col">23.46</td>
+																	<td class="num-col plus">+3.17%</td>
+																</tr>
+																<tr>
+																	<td class="text-col">priority te...</td>
+																	<td class="text-col">prth</td>
+																	<td class="num-col">8.90</td>
+																	<td class="num-col plus">+2.77%</td>
+																</tr>
+															</tbody>
+															<tfoot>
+																<tr>
+																	<td colspan="5">
+																		<a
+																			href="#"
+																			class="link"
+																			><img src="./img/arrow-white.svg" /><span
+																				>View All zacks #1 rank vgm stocks</span
+																			></a
+																		>
+																	</td>
+																</tr>
+															</tfoot>
+														</table>
+													</div>
+												</div>
+											</div>
+											<div
+												id="income"
+												class="tab-content"
+											>
+												<div class="widget">
+													<div class="widget-body table-wrapper">
+														<table class="table border-cell compact">
+															<thead>
+																<tr>
+																	<th class="text-col">company</th>
+																	<th class="text-col">symbol</th>
+																	<th class="num-col">price</th>
+																	<th class="num-col">%chg</th>
+																</tr>
+															</thead>
+															<tbody>
+																<tr>
+																	<td class="text-col">independent...</td>
+																	<td class="text-col">INDB</td>
+																	<td class="num-col">67.04</td>
+																	<td class="num-col plus">+4.88%</td>
+																</tr>
+																<tr>
+																	<td class="text-col">txo partner...</td>
+																	<td class="text-col">txo</td>
+																	<td class="num-col">19.39</td>
+																	<td class="num-col plus">+4.30%</td>
+																</tr>
+																<tr>
+																	<td class="text-col">qifu techno...</td>
+																	<td class="text-col">qfin</td>
+																	<td class="num-col">38.37</td>
+																	<td class="num-col plus">+3.59%</td>
+																</tr>
+																<tr>
+																	<td class="text-col">icl group</td>
+																	<td class="text-col">icl</td>
+																	<td class="num-col">5.91</td>
+																	<td class="num-col plus">+3.50%</td>
+																</tr>
+																<tr>
+																	<td class="text-col">the gap</td>
+																	<td class="text-col">gap</td>
+																	<td class="num-col">23.46</td>
+																	<td class="num-col plus">+3.17%</td>
+																</tr>
+															</tbody>
+															<tfoot>
+																<tr>
+																	<td colspan="5">
+																		<a
+																			href="#"
+																			class="link"
+																			><img src="./img/arrow-white.svg" /><span
+																				>View All zacks #1 rank income
+																				stocks</span
+																			></a
+																		>
+																	</td>
+																</tr>
+															</tfoot>
+														</table>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
 							</div>
 							<div class="col-lg-6 col-sm-12">
 								<h3 class="header-bold green">Zacks #1 rank additions</h3>
@@ -352,17 +891,26 @@
 				</div>
 
 				<!-- right sidebar -->
-				<aside id="sidebar" class="col-lg-3 col-sm-12">
+				<aside
+					id="sidebar"
+					class="col-lg-3 col-sm-12"
+				>
 					<!-- accordion -->
 					<div class="widget">
 						<h3 class="widget-title">market summary</h3>
 						<div class="widget-body">
 							<div class="accordion-item">
-								<div class="accordion-header active" data-target="dow">
+								<div
+									class="accordion-header active"
+									data-target="dow"
+								>
 									<table class="mkt-data">
 										<tr>
 											<th class="caret">
-												<img src="./img/caret.svg" alt="caret" />
+												<img
+													src="./img/caret.svg"
+													alt="caret"
+												/>
 											</th>
 											<th>DOW</th>
 											<th>43,297.03</th>
@@ -371,16 +919,25 @@
 										</tr>
 									</table>
 								</div>
-								<div id="dow" class="accordion-content active">
+								<div
+									id="dow"
+									class="accordion-content active"
+								>
 									<img src="./img/chart_img.jpg" />
 								</div>
 							</div>
 							<div class="accordion-item">
-								<div class="accordion-header" data-target="nasdaq">
+								<div
+									class="accordion-header"
+									data-target="nasdaq"
+								>
 									<table class="mkt-data">
 										<tr>
 											<th class="caret">
-												<img src="./img/caret.svg" alt="caret" />
+												<img
+													src="./img/caret.svg"
+													alt="caret"
+												/>
 											</th>
 											<th>NASDAQ</th>
 											<th>20,031.13</th>
@@ -389,16 +946,25 @@
 										</tr>
 									</table>
 								</div>
-								<div id="nasdaq" class="accordion-content">
+								<div
+									id="nasdaq"
+									class="accordion-content"
+								>
 									<img src="./img/chart-img-2.png" />
 								</div>
 							</div>
 							<div class="accordion-item">
-								<div class="accordion-header" data-target="sp">
+								<div
+									class="accordion-header"
+									data-target="sp"
+								>
 									<table class="mkt-data">
 										<tr>
 											<th class="caret">
-												<img src="./img/caret.svg" alt="caret" />
+												<img
+													src="./img/caret.svg"
+													alt="caret"
+												/>
 											</th>
 											<th>S&amp;P 500</th>
 											<th>6,040.04</th>
@@ -407,7 +973,10 @@
 										</tr>
 									</table>
 								</div>
-								<div id="sp" class="accordion-content">
+								<div
+									id="sp"
+									class="accordion-content"
+								>
 									<img src="./img/chart-img-3.png" />
 								</div>
 							</div>
@@ -415,18 +984,32 @@
 					</div>
 
 					<!-- tabs -->
-					<div id="trending_topics" class="widget transparent">
+					<div
+						id="trending_topics"
+						class="widget transparent"
+					>
 						<h3 class="widget-title">trending topics</h3>
 						<div class="widget-body">
 							<div class="tabs d-flex flex-jc-spa">
-								<div class="flex-b-50 tab active" data-target="tab1">
+								<div
+									class="flex-b-50 tab active"
+									data-target="tab1"
+								>
 									latest
 								</div>
-								<div class="flex-b-50 tab" data-target="tab2"> popular </div>
+								<div
+									class="flex-b-50 tab"
+									data-target="tab2"
+								>
+									popular
+								</div>
 							</div>
 
 							<div class="tab-contents">
-								<div id="tab1" class="tab-content active">
+								<div
+									id="tab1"
+									class="tab-content active"
+								>
 									<ul>
 										<li>Famed Santa Claus Rally Begins: Stocks to...</li>
 										<li>New Strong Buy Stocks for December 24th...</li>
@@ -440,7 +1023,10 @@
 										</li>
 									</ul>
 								</div>
-								<div id="tab2" class="tab-content scrollable">
+								<div
+									id="tab2"
+									class="tab-content scrollable"
+								>
 									<ul>
 										<li>Famed Santa Claus Rally Begins: Stocks to...</li>
 										<li>New Strong Buy Stocks for December 24th...</li>
@@ -513,7 +1099,9 @@
 								<tfoot>
 									<tr>
 										<td colspan="5">
-											<a href="#" class="link blue"
+											<a
+												href="#"
+												class="link blue"
 												><span>Learn to Profit with My portfolio today</span></a
 											>
 										</td>

@@ -338,6 +338,69 @@ aside {
 	}
 }
 
+//widget inside tabs
+#top_movers {
+	&.widget {
+		margin-top: 0;
+
+		.widget-body {
+			border-radius: 4px;
+			margin-top: 0;
+			margin-bottom: 0;
+
+			.tabs .tab.active {
+				border-top-color: var(--blue);
+			}
+
+			.tab-contents {
+				.widget,
+				.widget-body {
+					border: none;
+					background: none;
+					border-radius: 0;
+					box-shadow: none;
+					margin: 0;
+				}
+				table {
+					tr {
+						td {
+							&.text-col {
+								&:first-of-type {
+									font-weight: normal;
+								}
+
+								&:nth-of-type(2) {
+									font-weight: bold;
+									text-transform: uppercase;
+								}
+							}
+
+							a {
+								&.link {
+									background-color: var(--blue);
+									border-radius: 4px;
+									color: var(--basebgColor);
+
+									span {
+										width: auto;
+										float: right;
+										color: inherit;
+									}
+
+									img {
+										float: right;
+										margin-right: 0.5rem;
+									}
+								}
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+}
+
 //custom scroll bar
 /* For Chrome, Safari and Opera */
 ::-webkit-scrollbar {
@@ -581,10 +644,11 @@ $table_breakpoints: (
 			position: absolute;
 			top: 0.5rem;
 			right: 0;
-			padding: 0.4rem 1.4rem;
+			padding: 0.5rem 1.4rem;
 			border-radius: 24px;
 			background-color: var(--blue);
 			cursor: pointer;
+			border: none;
 
 			img {
 				width: 30px;
@@ -636,6 +700,7 @@ $table_breakpoints: (
 			border-radius: 10px;
 			padding: 0.5rem;
 			overflow: hidden;
+			transition: background linear 0.3s;
 
 			@media screen and (min-width: 992px) {
 				max-height: 39px;
@@ -655,6 +720,7 @@ $table_breakpoints: (
 
 			&:hover {
 				background-color: var(--widgetBorder);
+				transition: background linear 0.3s;
 
 				&::after {
 					opacity: 1;

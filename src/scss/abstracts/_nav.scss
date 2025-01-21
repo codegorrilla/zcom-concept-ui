@@ -145,6 +145,8 @@ nav {
 }
 
 //off-canvas navigation
+
+//trigger
 .offcanvas-menu-btn {
 	cursor: pointer;
 
@@ -170,5 +172,124 @@ nav {
 			display: block;
 			float: left;
 		}
+	}
+}
+
+//offcanvas nav container
+.off-canvas {
+	position: fixed;
+	z-index: 1;
+	top: 0;
+	right: -23rem; //~ 378px for col-lg-3
+	transition: right linear 0.4s;
+
+	//hide off-screen
+	width: calc(100vw - 80%);
+	height: 100vh;
+	padding: 1rem;
+	background-color: var(--basebgColor);
+	border-left: 1px solid var(--stackedArtBorder);
+	font-family: 'Poppins';
+	font-size: 1rem;
+	color: var(--baseTextColor);
+	text-align: left;
+
+	button {
+		&#offcanvas-close-btn {
+			width: 20px;
+			height: 20px;
+			border: none;
+			margin-left: auto;
+			margin-bottom: 1rem;
+			display: inline-block;
+			cursor: pointer;
+			font-size: 0;
+			background-image: url(../img/close-icon.png);
+			background-repeat: no-repeat;
+		}
+	}
+
+	ul {
+		width: 100%;
+		padding: 0.2rem 0;
+		border-top: 1px solid var(--black);
+
+		h4 {
+			width: 100%;
+			float: left;
+			padding: 1rem 0 0.5rem 0;
+			font-family: 'Poppins-bold';
+			font-size: 1rem;
+			text-align: left;
+			text-transform: capitalize;
+			color: var(--baseTextColor);
+		}
+
+		li {
+			width: 100%;
+			float: left;
+			padding: 0.5rem 0;
+			background-repeat: no-repeat;
+			background-position: left center;
+
+			&.ultimate {
+				background-image: url(../img/ts-logo/ultimate.jpg);
+				background-size: 30px 33px;
+			}
+
+			&.investor {
+				background-image: url(../img/ts-logo/ic.jpg);
+				background-size: 30px 33px;
+			}
+
+			&.su10 {
+				background-image: url(../img/ts-logo/su10.jpg);
+				background-size: 30px 32px;
+			}
+
+			&.homerun {
+				background-image: url(../img/ts-logo/hri.jpg);
+				background-size: 30px 34px;
+			}
+
+			&.etf {
+				background-image: url(../img/ts-logo/etf.jpg);
+				background-size: 30px 32px;
+			}
+
+			&.ae {
+				background-image: url(../img/ts-logo/ae.jpg);
+				background-size: 30px 33px;
+			}
+
+			&.tazr {
+				background-image: url(../img/ts-logo/tazr.jpg);
+				background-size: 30px 32px;
+			}
+
+			&.sll {
+				background-image: url(../img/ts-logo/sll.jpg);
+				background-size: 30px 32px;
+			}
+
+			&:hover {
+				color: var(--blue);
+			}
+
+			a {
+				padding-left: 2rem;
+				font-family: inherit;
+				font-size: inherit;
+				color: inherit;
+				text-align: left;
+				color: inherit;
+				text-transform: capitalize;
+			}
+		}
+	}
+
+	&.open {
+		right: 0;
+		transition: right linear 0.4s;
 	}
 }
