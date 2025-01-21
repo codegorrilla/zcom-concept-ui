@@ -1,97 +1,108 @@
 @use 'sass:map';
 
 :root {
-  --gutter-x: 1.188rem; //19px => row gap
-  --gutter-y: 0;
+	--gutter-x: 1.188rem; //19px => row gap
+	--gutter-y: 0;
 }
 
 //container class
 .container {
-  width: 100%;
-  max-width: 1512px;
-  margin-right: auto;
-  margin-left: auto;
-  padding-top: 2rem;
+	width: 100%;
+	max-width: 1512px;
+	margin-right: auto;
+	margin-left: auto;
+	padding-top: 2rem;
+
+	&.body {
+		padding-top: 0;
+	}
+}
+
+.container-fluid {
+	width: 100%;
+	margin-right: 0;
+	margin-left: 0;
+	padding-top: 1rem;
 }
 
 .row {
-  display: flex;
-  flex-wrap: wrap;
-  gap: var(--gutter-x) var(--gutter-y);
+	display: flex;
+	flex-wrap: wrap;
+	gap: var(--gutter-x) var(--gutter-y);
 }
 
 $columns: 12;
 
 [class^='col-'] {
-  flex-basis: 100%;
-  padding-left: calc(0.5 * var(--gutter-x));
-  padding-right: calc(0.5 * var(--gutter-x));
+	flex-basis: 100%;
+	padding-left: calc(0.5 * var(--gutter-x));
+	padding-right: calc(0.5 * var(--gutter-x));
 }
 
 $breakpoints: (
-  mobile: 375px,
-  tablet: 768px,
-  desktop: 992px,
-  quad: 1200px,
+	mobile: 375px,
+	tablet: 768px,
+	desktop: 992px,
+	quad: 1200px,
 );
 
 //media query mixin
 @mixin mq($key) {
-  $size: map.get($breakpoints, $key);
+	$size: map.get($breakpoints, $key);
 
-  @media (min-width: $size) {
-    @content;
-  }
+	@media (min-width: $size) {
+		@content;
+	}
 }
 
 //for mobiles including offset selectors
 @include mq(mobile) {
-  @for $i from 1 through $columns {
-    .col-sm-#{$i} {
-      flex: 0 0 calc(100% / calc($columns/$i));
-    }
+	@for $i from 1 through $columns {
+		.col-sm-#{$i} {
+			flex: 0 0 calc(100% / calc($columns/$i));
+		}
 
-    .col-offset-sm-#{$i} {
-      margin-left: 100% / calc($columns / $i);
-    }
-  }
+		.col-offset-sm-#{$i} {
+			margin-left: 100% / calc($columns / $i);
+		}
+	}
 }
 
 //for tablets including offset selectors
 @include mq(tablet) {
-  @for $i from 1 through $columns {
-    .col-md-#{$i} {
-      flex: 0 0 calc(100% / calc($columns/$i));
-    }
+	@for $i from 1 through $columns {
+		.col-md-#{$i} {
+			flex: 0 0 calc(100% / calc($columns/$i));
+		}
 
-    .col-offset-md-#{$i} {
-      margin-left: 100% / calc($columns / $i);
-    }
-  }
+		.col-offset-md-#{$i} {
+			margin-left: 100% / calc($columns / $i);
+		}
+	}
 }
 
 //for desktops including offset selectors
 @include mq(desktop) {
-  @for $i from 1 through $columns {
-    .col-lg-#{$i} {
-      flex: 0 0 calc(100% / calc($columns/$i));
-    }
+	@for $i from 1 through $columns {
+		.col-lg-#{$i} {
+			flex: 0 0 calc(100% / calc($columns/$i));
+		}
 
-    .col-offset-lg-#{$i} {
-      margin-left: 100% / calc($columns / $i);
-    }
-  }
+		.col-offset-lg-#{$i} {
+			margin-left: 100% / calc($columns / $i);
+		}
+	}
 }
 
 //for quad screens including offset selectors
 @include mq(quad) {
-  @for $i from 1 through $columns {
-    .col-xl-#{$i} {
-      flex: 0 0 calc(100% / calc($columns/$i));
-    }
+	@for $i from 1 through $columns {
+		.col-xl-#{$i} {
+			flex: 0 0 calc(100% / calc($columns/$i));
+		}
 
-    .col-offset-xl-#{$i} {
-      margin-left: 100% / calc($columns / $i);
-    }
-  }
+		.col-offset-xl-#{$i} {
+			margin-left: 100% / calc($columns / $i);
+		}
+	}
 }
