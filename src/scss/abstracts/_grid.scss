@@ -63,7 +63,7 @@ $breakpoints: (
 		}
 
 		.col-offset-sm-#{$i} {
-			margin-left: 100% / calc($columns / $i);
+			margin-left: calc(100% / ($columns / $i)) !important;
 		}
 	}
 }
@@ -76,7 +76,7 @@ $breakpoints: (
 		}
 
 		.col-offset-md-#{$i} {
-			margin-left: 100% / calc($columns / $i);
+			margin-left: calc(100% / ($columns / $i)) !important;
 		}
 	}
 }
@@ -89,7 +89,7 @@ $breakpoints: (
 		}
 
 		.col-offset-lg-#{$i} {
-			margin-left: 100% / calc($columns / $i);
+			margin-left: calc(100% / ($columns / $i)) !important;
 		}
 	}
 }
@@ -102,7 +102,7 @@ $breakpoints: (
 		}
 
 		.col-offset-xl-#{$i} {
-			margin-left: 100% / calc($columns / $i);
+			margin-left: calc(100% / ($columns / $i)) !important;
 		}
 	}
 }

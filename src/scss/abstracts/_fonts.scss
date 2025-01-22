@@ -53,10 +53,23 @@ h3 {
 	}
 }
 
+h4 {
+	padding: 0.5rem 0;
+	font-family: 'Poppins';
+	font-size: 0.95rem;
+	font-weight: normal;
+	color: var(--titleTextColor);
+	text-align: left;
+}
+
 p {
 	font-family: 'Nunito';
 	font-weight: normal;
 	font-size: 1rem;
 	text-align: left;
 	color: var(--baseTextColor);
+}
+
+.earnings-art-title {
+	font-size: 1.2rem;
 }

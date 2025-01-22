@@ -37,6 +37,13 @@
 		border-radius: 50%;
 		display: inline-block;
 		margin-right: 0.4rem;
+		overflow: hidden;
+
+		& + .author-name {
+			padding-top: 0.65rem;
+			padding-left: 0.65rem;
+			font-size: 0.75rem;
+		}
 	}
 
 	.author-name {
@@ -67,6 +74,53 @@
 
 //vertically stacked article listing
 .stacked-art-sm {
+	.stacked-mod-title {
+		padding-bottom: 1rem;
+		font-family: 'Poppins-bold';
+		font-size: 1rem;
+		text-align: left;
+
+		&.green {
+			color: var(--green);
+		}
+
+		&::before {
+			width: 26px;
+			height: 28px;
+			content: '';
+			background-repeat: no-repeat;
+			background-position: left center;
+			margin-right: 0.4rem;
+			display: inline-block;
+			position: relative;
+			top: 6px;
+		}
+
+		&.stocks {
+			&::before {
+				background-image: url(../img/stock_icon.png);
+			}
+		}
+
+		&.etf {
+			&::before {
+				background-image: url(../img/etf_icon.png);
+			}
+		}
+
+		&.mf {
+			&::before {
+				background-image: url(../img/mf_icon.png);
+			}
+		}
+
+		&.op {
+			&::before {
+				background-image: url(../img/option_icon.png);
+			}
+		}
+	}
+
 	article {
 		margin-bottom: 0.113rem;
 		padding-bottom: 0.113rem;
@@ -79,6 +133,12 @@
 		h3 {
 			margin: 0;
 			padding-bottom: 0;
+		}
+
+		h4 {
+			&:hover {
+				text-decoration: underline;
+			}
 		}
 
 		.author-detail.d-flex {
@@ -99,6 +159,19 @@
 	& + .stacked-art-sm {
 		border-left: 1px solid var(--stackedArtBorder);
 	}
+
+	&.border-0 + .stacked-art-sm {
+		border-left: 0;
+	}
+
+	//compact articles
+	&.compact {
+		.hero-img.rounded {
+			img {
+				max-height: 77px;
+			}
+		}
+	}
 }
 
 //title pane
@@ -114,6 +187,33 @@
 
 	&.green-bg {
 		background-color: var(--green);
+	}
+
+	&.lg {
+		--space-right: 0.9rem;
+		--space-left: 1.3rem;
+		width: calc(100% - (var(--space-left) + var(--space-right)));
+		margin-top: 0;
+		margin-left: 1rem;
+		margin-right: 0.6rem;
+		margin-bottom: 0;
+		padding: 0.9rem;
+		font-size: 1.2rem;
+	}
+
+	&.with-icon {
+		background-size: 37px 33px;
+		background-repeat: no-repeat;
+		background-position: 0.6rem;
+		padding-left: 60px; //background size + background left-position
+
+		&.invest {
+			background-image: url(../img/invest_icon.png);
+		}
+
+		&.earnings {
+			background-image: url(../img/earnings_icon.png);
+		}
 	}
 }
 
@@ -338,7 +438,7 @@ aside {
 	}
 }
 
-//widget inside tabs
+//widget inside tabs => top movers tab
 #top_movers {
 	&.widget {
 		margin-top: 0;
@@ -377,6 +477,7 @@ aside {
 
 							a {
 								&.link {
+									margin-top: 1rem;
 									background-color: var(--blue);
 									border-radius: 4px;
 									color: var(--basebgColor);
@@ -396,6 +497,50 @@ aside {
 						}
 					}
 				}
+
+				.tab-content {
+					height: 240px;
+				}
+			}
+		}
+	}
+}
+
+// rank#1 additions
+#rank-additions {
+	margin-top: 0;
+
+	table {
+		tr {
+			td {
+				&.text-col {
+					font-weight: normal;
+
+					b {
+						font-weight: 600;
+					}
+				}
+
+				padding: 0.18rem 0;
+			}
+		}
+	}
+
+	a {
+		&.link {
+			background-color: var(--blue);
+			border-radius: 4px;
+			color: var(--basebgColor);
+
+			span {
+				width: auto;
+				float: right;
+				color: inherit;
+			}
+
+			img {
+				float: right;
+				margin-right: 0.5rem;
 			}
 		}
 	}
