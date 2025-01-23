@@ -55,6 +55,15 @@
 		&:focus {
 			text-decoration: underline;
 		}
+
+		&.art-cat-title {
+			padding-top: 0.05rem;
+
+			b {
+				font-weight: bold;
+				color: var(--baseTextColor);
+			}
+		}
 	}
 
 	.art-date {
@@ -136,9 +145,16 @@
 		}
 
 		h4 {
+			margin-top: 0.1rem;
+
 			&:hover {
 				text-decoration: underline;
 			}
+		}
+
+		p {
+			margin-top: 0rem;
+			margin-bottom: 0.4rem;
 		}
 
 		.author-detail.d-flex {
@@ -190,11 +206,11 @@
 	}
 
 	&.lg {
-		--space-right: 0.9rem;
-		--space-left: 1.3rem;
+		--space-right: 0.5rem;
+		--space-left: 0.5rem;
 		width: calc(100% - (var(--space-left) + var(--space-right)));
 		margin-top: 0;
-		margin-left: 1rem;
+		margin-left: 0.6rem;
 		margin-right: 0.6rem;
 		margin-bottom: 0;
 		padding: 0.9rem;
