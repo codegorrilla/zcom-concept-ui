@@ -88,8 +88,17 @@
 		align-items: center;
 	}
 
+	//align self
+	.flex-as-end {
+		align-self: flex-end;
+	}
+
 	.flex-b-20 {
 		flex-basis: 18%;
+	}
+
+	.flex-b-30 {
+		flex-basis: 28%;
 	}
 
 	.flex-b-50 {
@@ -103,6 +112,10 @@
 }
 
 //custom padding and margin control
+.px-1-end {
+	padding-right: 1rem;
+}
+
 .py-0 {
 	padding-top: 0;
 	padding-bottom: 0;
@@ -118,4 +131,8 @@
 
 .my-1-end {
 	margin-bottom: 1rem !important;
+}
+
+.mx-auto-st {
+	margin-left: auto;
 }

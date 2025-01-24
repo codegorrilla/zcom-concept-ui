@@ -88,6 +88,7 @@
 		font-family: 'Poppins-bold';
 		font-size: 1rem;
 		text-align: left;
+		text-transform: capitalize;
 
 		&.green {
 			color: var(--green);
@@ -127,6 +128,22 @@
 			&::before {
 				background-image: url(../img/option_icon.png);
 			}
+		}
+
+		&.eh {
+			&::before {
+				width: 28px;
+				top: 8px;
+				background-image: url(../img/earnings_head_icon.png);
+			}
+		}
+
+		//custom title positioning
+		&.custom-pos-t {
+			//custom position from top inside the parent container
+			position: relative;
+			top: -20px;
+			padding-bottom: 0;
 		}
 	}
 
@@ -229,6 +246,12 @@
 
 		&.earnings {
 			background-image: url(../img/earnings_icon.png);
+		}
+
+		&.video {
+			background-image: url(../img/video_icon.png);
+			background-size: 25px 17px;
+			padding-left: 45px;
 		}
 	}
 }
@@ -455,7 +478,8 @@ aside {
 }
 
 //widget inside tabs => top movers tab
-#top_movers {
+#top_movers,
+#ear_suprise {
 	&.widget {
 		margin-top: 0;
 
@@ -515,7 +539,7 @@ aside {
 				}
 
 				.tab-content {
-					height: 240px;
+					height: auto;
 				}
 			}
 		}
@@ -523,11 +547,19 @@ aside {
 }
 
 // rank#1 additions
-#rank-additions {
+#rank-additions,
+#upcoming_esp {
 	margin-top: 0;
 
 	table {
 		tr {
+			th {
+				padding-bottom: 0.3rem;
+
+				&.text-col {
+					padding-left: 0;
+				}
+			}
 			td {
 				&.text-col {
 					font-weight: normal;
@@ -557,6 +589,16 @@ aside {
 			img {
 				float: right;
 				margin-right: 0.5rem;
+			}
+		}
+	}
+}
+
+#upcoming_esp {
+	table {
+		tbody {
+			td {
+				padding: 0.5rem 0;
 			}
 		}
 	}
@@ -616,7 +658,8 @@ aside {
 }
 
 //link
-.link {
+.link,
+.mod-top-link {
 	width: 100%;
 	padding: 0.5rem 0;
 	border-top: 1px solid var(--stackedArtBorder);
@@ -644,6 +687,15 @@ aside {
 		height: 6px;
 		margin-left: 0.4rem;
 		margin-top: 0.4rem;
+	}
+}
+
+.mod-top-link {
+	width: 100%;
+	border-top: none;
+
+	&.right {
+		float: right;
 	}
 }
 
@@ -922,5 +974,15 @@ $table_breakpoints: (
 				}
 			}
 		}
+	}
+}
+
+//pushing link to the right side of any container
+.link-pos-right {
+	width: 100%;
+	text-align: right;
+
+	.mod-top-link {
+		width: auto;
 	}
 }

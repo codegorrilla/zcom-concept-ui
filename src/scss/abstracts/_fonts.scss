@@ -50,6 +50,35 @@ h3 {
 	&.header-bold {
 		font-family: 'Poppins-bold';
 		font-size: 1.125rem;
+		text-transform: capitalize;
+
+		&.with-icon {
+			&::before {
+				content: '';
+				width: 26px;
+				height: 28px;
+				display: inline-block;
+				background-repeat: no-repeat;
+				background-position: left center;
+				padding-left: 2rem;
+				position: relative;
+				top: 6px;
+			}
+
+			//earnings surprises
+			&.es {
+				&::before {
+					background-image: url(../img/report_icon.png);
+				}
+			}
+
+			//earnings esp
+			&.esp {
+				&::before {
+					background-image: url(../img/esp_icon.png);
+				}
+			}
+		}
 	}
 }
 
