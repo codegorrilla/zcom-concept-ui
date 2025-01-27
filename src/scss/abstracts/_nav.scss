@@ -293,3 +293,28 @@ nav {
 		transition: right linear 0.4s;
 	}
 }
+
+//footer menu
+.footer-menu {
+	padding-bottom: 1.5rem;
+
+	ul {
+		li {
+			width: 100%;
+			padding: 0.3rem 0;
+			display: inline-block;
+
+			a {
+				font-family: 'Poppins';
+				font-family: 0.75rem;
+				text-align: left;
+				text-transform: capitalize;
+
+				&:hover,
+				&:focus {
+					text-decoration: underline;
+				}
+			}
+		}
+	}
+}
