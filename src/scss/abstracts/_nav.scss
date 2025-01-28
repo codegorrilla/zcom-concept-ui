@@ -144,6 +144,96 @@ nav {
 	}
 }
 
+//header right menu
+.right-menu {
+	margin-left: auto;
+
+	ul {
+		li {
+			width: auto;
+			float: left;
+			position: relative;
+			background-color: transparent;
+			border-radius: 10px;
+			padding: 0.5rem;
+			overflow: hidden;
+			transition: background-color linear 0.3s;
+
+			@media screen and (min-width: 992px) {
+				max-height: 39px;
+			}
+
+			&:hover {
+				background-color: var(--widgetBorder);
+				transition: background-color linear 0.3s;
+
+				a {
+					span {
+						opacity: 0;
+						top: -14px;
+						transition: all ease-in 0.15s;
+					}
+
+					&::after {
+						opacity: 1;
+						top: 14px;
+						transition: all linear 0.3s;
+					}
+				}
+			}
+
+			a {
+				background-color: transparent;
+				padding-left: 0.05rem;
+				padding-right: 0.6rem;
+				font-family: 'Poppins';
+				font-size: 0.775rem;
+				color: var(--baseTextColor);
+				text-align: center;
+				text-transform: capitalize;
+
+				span {
+					position: relative;
+					top: 0;
+					transition: all ease-in 0.15s;
+				}
+
+				&::after {
+					content: '';
+					background-repeat: no-repeat;
+					display: inline-block;
+					width: 13px;
+					height: 13px;
+					position: absolute;
+					left: 50%;
+					top: -13px;
+					transform: translateX(-50%);
+					transition: all linear 0.3s;
+					opacity: 0;
+				}
+
+				&.join {
+					&::after {
+						background-image: url(../img/join-13x10-icon.png);
+					}
+				}
+
+				&.login {
+					&::after {
+						background-image: url(../img/login-10x10-icon.png);
+					}
+				}
+
+				&.help {
+					&::after {
+						background-image: url(../img/help-13x13-icon.png);
+					}
+				}
+			}
+		}
+	}
+}
+
 //off-canvas navigation
 
 //trigger

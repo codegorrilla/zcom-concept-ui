@@ -1,0 +1,694 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta
+			name="viewport"
+			content="width=device-width, initial-scale=1.0"
+		/>
+		<title>ZCOM Concept UI - Commentary</title>
+		<script
+			type="module"
+			src="./js/main.js"
+		></script>
+	</head>
+	<body>
+		<!-- header -->
+		<header class="container">
+			<section class="row">
+				<div class="col-lg-9 d-flex flex-jc-st">
+					<a
+						href="#"
+						class="col-lg-3"
+					>
+						<img
+							src="./img/logo-zacks.png"
+							alt="zacks-logo"
+						/>
+					</a>
+					<div class="search-pane col-lg-3">
+						<div class="rounded">
+							<input
+								type="text"
+								value=""
+								placeholder="search quote..."
+							/>
+						</div>
+						<button class="search-cta">
+							<img src="./img/search.svg" />
+						</button>
+					</div>
+					<a
+						href="#"
+						class="new-to-zacks col-lg-6"
+					>
+						<p>
+							new to zacks?
+							<span>get started here.</span>
+						</p>
+						<img
+							src="./img/new-to-zacks.png"
+							alt=""
+						/>
+					</a>
+				</div>
+				<div class="col-lg-3 d-flex">
+					<menu class="right-menu">
+						<ul>
+							<li>
+								<a
+									href="#"
+									class="join"
+									><span>join now</span></a
+								>
+							</li>
+							<li>
+								<a
+									href="#"
+									class="login"
+									><span>sign in</span></a
+								>
+							</li>
+							<li>
+								<a
+									href="#"
+									class="help"
+									><span>help</span></a
+								>
+							</li>
+						</ul>
+					</menu>
+				</div>
+			</section>
+		</header>
+		<section class="container-fluid">
+			<nav>
+				<div class="nav-wrapper d-flex">
+					<ul class="main-nav col-lg-12">
+						<li class="home active">
+							<a
+								href="#"
+								title="Home"
+								>Home</a
+							>
+						</li>
+						<li class="dropdown">
+							<button class="down-arrow">stocks</button>
+							<div class="dropdown-content">
+								<a href="#">Stocks</a>
+								<a href="#">Zacks #1 Rank</a>
+								<a href="#">Zacks rank</a>
+								<a href="#">zacks industry rank</a>
+								<a href="#">zacks sector rank</a>
+								<a href="#">equity research</a>
+								<a href="#">markets</a>
+							</div>
+						</li>
+						<li class="dropdown">
+							<button class="down-arrow">funds</button>
+							<div class="dropdown-content">
+								<a href="#">funds</a>
+								<a href="#">mutual funds</a>
+								<a href="#">ETFs</a>
+								<a href="#">mutual fund screener</a>
+								<a href="#">ETF screneer</a>
+								<a href="#">markets</a>
+							</div>
+						</li>
+						<li>
+							<a href="#">Crypto</a>
+						</li>
+						<li class="dropdown">
+							<button class="down-arrow">earnings</button>
+							<div class="dropdown-content">
+								<a href="#">earnings</a>
+								<a href="#">earnings calendar</a>
+								<a href="#">earnings releases</a>
+								<a href="#">earnings ESP</a>
+								<a href="#">earnings esp filter</a>
+							</div>
+						</li>
+						<li class="dropdown">
+							<button class="down-arrow">screening</button>
+							<div class="dropdown-content">
+								<a href="#">screening</a>
+								<a href="#">stock screener</a>
+								<a href="#">mutual fund screener</a>
+								<a href="#">etf screener</a>
+								<a href="#">premium screens</a>
+								<a href="#">basic screens</a>
+								<a href="#">thematic screens</a>
+								<a href="#">research wizard</a>
+							</div>
+						</li>
+						<li class="dropdown">
+							<button class="down-arrow">finance</button>
+							<div class="dropdown-content">
+								<a href="#">personal finance</a>
+								<a href="#">money management</a>
+								<a href="#">retirement planning</a>
+								<a href="#">tax information</a>
+							</div>
+						</li>
+						<li class="dropdown">
+							<button class="down-arrow">portfolio</button>
+							<div class="dropdown-content">
+								<a href="#">my portfolio</a>
+								<a href="#">create portfolio</a>
+							</div>
+						</li>
+						<li class="dropdown">
+							<button class="down-arrow">education</button>
+							<div class="dropdown-content">
+								<a href="#">stocks</a>
+								<a href="#">style scores</a>
+								<a href="#">funds</a>
+								<a href="#">earnings esp</a>
+								<a href="#">screening</a>
+								<a href="#">testimonials</a>
+								<a href="#">zacks.com tutorial</a>
+							</div>
+						</li>
+						<li>
+							<a href="#">video</a>
+						</li>
+						<li>
+							<a href="#">podcasts</a>
+						</li>
+						<li class="offcanvas-menu-btn">
+							<button>services</button>
+							<div class="burger"><span></span><span></span><span></span></div>
+						</li>
+					</ul>
+				</div>
+			</nav>
+		</section>
+
+		<section
+			id="offcanvas-menu"
+			class="off-canvas d-flex"
+		>
+			<div class="d-flex flex-dir-col flex-b-100">
+				<button
+					id="offcanvas-close-btn"
+					title="close"
+				>
+					close
+				</button>
+				<ul>
+					<h4>services overview</h4>
+					<li class="ultimate"><a href="#"> zacks ultimate </a></li>
+					<li class="investor"><a href="#">zacks investor collection</a></li>
+				</ul>
+
+				<ul>
+					<h4>investor services</h4>
+					<li class="etf"><a href="#">etf investor</a></li>
+					<li class="homerun"><a href="#">homerun investor</a></li>
+					<li class="su10"><a href="#">stocks under $10</a></li>
+				</ul>
+
+				<ul>
+					<h4>innovators</h4>
+					<li class="ae"><a href="#">alternative energy</a></li>
+				</ul>
+
+				<ul>
+					<h4>trading services</h4>
+					<li class="sll"><a href="#">Short sell list</a></li>
+					<li class="tazr"><a href="#">TAZR</a></li>
+				</ul>
+			</div>
+		</section>
+
+		<main class="container body">
+			<section class="row">
+				<!-- main content area -->
+				<div class="main-content col-lg-9 col-md-12 col-sm-12 d-flex"></div>
+				<!-- right sidebar -->
+				<aside
+					id="sidebar"
+					class="col-lg-3 col-sm-12"
+				>
+					<!-- accordion -->
+					<div class="widget">
+						<h3 class="widget-title">market summary</h3>
+						<div class="widget-body">
+							<div class="accordion-item">
+								<div
+									class="accordion-header active"
+									data-target="dow"
+								>
+									<table class="mkt-data">
+										<tr>
+											<th class="caret">
+												<img
+													src="./img/caret.svg"
+													alt="caret"
+												/>
+											</th>
+											<th>DOW</th>
+											<th>43,297.03</th>
+											<th>+390.08</th>
+											<th>+0.91%</th>
+										</tr>
+									</table>
+								</div>
+								<div
+									id="dow"
+									class="accordion-content active"
+								>
+									<img src="./img/chart_img.jpg" />
+								</div>
+							</div>
+							<div class="accordion-item">
+								<div
+									class="accordion-header"
+									data-target="nasdaq"
+								>
+									<table class="mkt-data">
+										<tr>
+											<th class="caret">
+												<img
+													src="./img/caret.svg"
+													alt="caret"
+												/>
+											</th>
+											<th>NASDAQ</th>
+											<th>20,031.13</th>
+											<th class="green">+266.24</th>
+											<th class="green">+1.35%</th>
+										</tr>
+									</table>
+								</div>
+								<div
+									id="nasdaq"
+									class="accordion-content"
+								>
+									<img src="./img/chart-img-2.png" />
+								</div>
+							</div>
+							<div class="accordion-item">
+								<div
+									class="accordion-header"
+									data-target="sp"
+								>
+									<table class="mkt-data">
+										<tr>
+											<th class="caret">
+												<img
+													src="./img/caret.svg"
+													alt="caret"
+												/>
+											</th>
+											<th>S&amp;P 500</th>
+											<th>6,040.04</th>
+											<th class="green">+65.97</th>
+											<th class="green">+1.10%</th>
+										</tr>
+									</table>
+								</div>
+								<div
+									id="sp"
+									class="accordion-content"
+								>
+									<img src="./img/chart-img-3.png" />
+								</div>
+							</div>
+						</div>
+					</div>
+
+					<!-- tabs -->
+					<div
+						id="trending_topics"
+						class="widget transparent"
+					>
+						<h3 class="widget-title">trending topics</h3>
+						<div class="widget-body">
+							<div class="tabs d-flex flex-jc-spa">
+								<div
+									class="flex-b-50 tab active"
+									data-target="tab1"
+								>
+									latest
+								</div>
+								<div
+									class="flex-b-50 tab"
+									data-target="tab2"
+								>
+									popular
+								</div>
+							</div>
+
+							<div class="tab-contents">
+								<div
+									id="tab1"
+									class="tab-content active"
+								>
+									<ul>
+										<li>Famed Santa Claus Rally Begins: Stocks to...</li>
+										<li>New Strong Buy Stocks for December 24th...</li>
+										<li>Top Stock Reports for T-Mobile, Toyota Motor...</li>
+										<li>
+											AWS 12/24: Xmas Eve Pre-Markets Mixed (Red & Green)...
+										</li>
+										<li>
+											PFP 12/24: Stocks Closed Mostly Higher to Start
+											Christmas...
+										</li>
+									</ul>
+								</div>
+								<div
+									id="tab2"
+									class="tab-content scrollable"
+								>
+									<ul>
+										<li>Famed Santa Claus Rally Begins: Stocks to...</li>
+										<li>New Strong Buy Stocks for December 24th...</li>
+										<li>Top Stock Reports for T-Mobile, Toyota Motor...</li>
+										<li>
+											AWS 12/24: Xmas Eve Pre-Markets Mixed (Red & Green)...
+										</li>
+										<li>
+											PFP 12/24: Stocks Closed Mostly Higher to Start
+											Christmas...
+										</li>
+									</ul>
+								</div>
+							</div>
+						</div>
+					</div>
+
+					<!-- table -->
+					<div class="widget">
+						<h3 class="widget-title">recent quotes</h3>
+						<div class="widget-body table-wrapper">
+							<table class="table border-cell compact">
+								<thead>
+									<tr>
+										<th class="text-col">symbol</th>
+										<th class="num-col">price</th>
+										<th class="num-col">$chg</th>
+										<th class="num-col">%chg</th>
+										<th class="sym-col">report</th>
+									</tr>
+								</thead>
+								<tbody>
+									<tr>
+										<td class="text-col">VNCE</td>
+										<td class="num-col">4.02</td>
+										<td class="num-col plus">0.31</td>
+										<td class="num-col plus">8.36%</td>
+										<td class="sym-col doc">
+											<a href="#"><img src="./img/doc_icon.svg" /></a>
+										</td>
+									</tr>
+									<tr>
+										<td class="text-col">MSFT</td>
+										<td class="num-col">430.53</td>
+										<td class="num-col minus">-7.58</td>
+										<td class="num-col minus">-1.73%</td>
+										<td class="sym-col shot">
+											<a href="#"><img src="./img/shot_icon.svg" /></a>
+										</td>
+									</tr>
+									<tr>
+										<td class="text-col">BRK.A</td>
+										<td class="num-col">684,908.50</td>
+										<td class="num-col minus">-2,691.50</td>
+										<td class="num-col minus">-0.39%</td>
+										<td class="sym-col shot">
+											<a href="#"><img src="./img/shot_icon.svg" /></a>
+										</td>
+									</tr>
+									<tr>
+										<td class="text-col">UAA</td>
+										<td class="num-col">8.38</td>
+										<td class="num-col minus">-0.07</td>
+										<td class="num-col minus">-0.83%</td>
+										<td class="sym-col doc">
+											<a href="#"><img src="./img/doc_icon.svg" /></a>
+										</td>
+									</tr>
+								</tbody>
+								<tfoot>
+									<tr>
+										<td colspan="5">
+											<a
+												href="#"
+												class="link blue"
+												><span>Learn to Profit with My portfolio today</span></a
+											>
+										</td>
+									</tr>
+								</tfoot>
+							</table>
+						</div>
+					</div>
+
+					<div class="widget">
+						<div class="widget-body ad">
+							<img
+								src="./img/sidebar_ad_2.jpg"
+								alt=""
+							/>
+						</div>
+					</div>
+
+					<!-- top zacks feature -->
+					<div class="widget">
+						<h3 class="widget-title zacks-icon">
+							<span> top zacks features </span>
+						</h3>
+						<div class="widget-body feature-items">
+							<ul class="px-0-st py-1-end">
+								<li><a href="#">Zacks #1 rank</a></li>
+								<li><a href="#">industry rank list</a></li>
+								<li><a href="#">profit from the pros</a></li>
+								<li><a href="#">stock screener</a></li>
+								<li><a href="#">my portfolio</a></li>
+								<li><a href="#">zacks ultimate</a></li>
+							</ul>
+						</div>
+					</div>
+				</aside>
+			</section>
+		</main>
+
+		<!-- footer -->
+		<hr class="bottom" />
+		<footer class="container">
+			<section class="row">
+				<div class="col-lg-12 d-flex footer-sections">
+					<div class="col-lg-3 col-sm-12 px-0-st">
+						<div class="col-lg-12 d-flex">
+							<h3>follow us</h3>
+							<ul class="social px-0-st">
+								<li>
+									<a href="#">
+										<img
+											src="./img/logos_x.png"
+											alt=""
+										/>
+									</a>
+								</li>
+								<li>
+									<a
+										href="#"
+										class="fb"
+									>
+										<img
+											src="./img/logos_fb.png"
+											alt=""
+										/>
+									</a>
+								</li>
+								<li>
+									<a
+										href="#"
+										class="lnk"
+									>
+										<img
+											src="./img/logos_linkedin.png"
+											alt=""
+										/>
+									</a>
+								</li>
+								<li>
+									<a href="#">
+										<img
+											src="./img/logos_youtube.png"
+											alt=""
+										/>
+									</a>
+								</li>
+							</ul>
+						</div>
+
+						<div class="col-lg-12 d-flex">
+							<h3>zacks mobile app</h3>
+							<ul class="app-badges px-0-st">
+								<li>
+									<a href="#">
+										<img
+											src="./img/badge_android.png"
+											alt=""
+										/>
+									</a>
+								</li>
+								<li>
+									<a href="#">
+										<img
+											src="./img/badge_iOS.png"
+											alt=""
+										/>
+									</a>
+								</li>
+							</ul>
+						</div>
+					</div>
+					<div class="col-lg-6 col-sm-12 d-flex footer-menu">
+						<div class="col-lg-3 col-sm-12">
+							<h4>services</h4>
+							<ul class="px-0-st">
+								<li><a href="#">account types</a></li>
+								<li><a href="#">premium services</a></li>
+								<li><a href="#">zacks rank</a></li>
+								<li><a href="#">research</a></li>
+								<li><a href="#">personal finance</a></li>
+								<li><a href="#">commentary</a></li>
+								<li><a href="#">education</a></li>
+								<li><a href="#">zacks advisor tools</a></li>
+							</ul>
+						</div>
+						<div class="col-lg-3 col-sm-12">
+							<h4>my account</h4>
+							<ul class="px-0-st">
+								<li><a href="#">manage account</a></li>
+								<li><a href="#">update profile</a></li>
+								<li><a href="#">subscriptions</a></li>
+								<li><a href="#">cancel subscription</a></li>
+								<li><a href="#">preferences</a></li>
+								<li><a href="#">unsubscribe</a></li>
+								<li><a href="#">login/password help</a></li>
+								<li><a href="#">upgrade to premium</a></li>
+							</ul>
+						</div>
+						<div class="col-lg-3 col-sm-12">
+							<h4>resources</h4>
+							<ul class="px-0-st">
+								<li><a href="#">help</a></li>
+								<li><a href="#">about zacks</a></li>
+								<li><a href="#">zacks writers</a></li>
+								<li><a href="#">privacy policy</a></li>
+								<li>
+									<a href="#">do not sell my<br />personal information</a>
+								</li>
+								<li><a href="#">terms of service</a></li>
+								<li><a href="#">performance disclosure</a></li>
+								<li><a href="#">accessibility</a></li>
+								<li><a href="#">site map</a></li>
+								<li><a href="#">podcasts</a></li>
+								<li><a href="#">earning calendar</a></li>
+							</ul>
+						</div>
+						<div class="col-lg-3 col-sm-12">
+							<h4>client support</h4>
+							<ul class="px-0-st">
+								<li><a href="#">contact us</a></li>
+								<li><a href="#">share feedback</a></li>
+								<li><a href="#">media</a></li>
+								<li><a href="#">career</a></li>
+								<li><a href="#">advertise</a></li>
+								<li><a href="#">testimonials</a></li>
+							</ul>
+						</div>
+					</div>
+					<div class="col-lg-3 col-sm-12">
+						<h4>zacks research is reported on:</h4>
+						<img
+							src="./img/clients.png"
+							class="clients"
+						/>
+					</div>
+					<hr class="bottom" />
+				</div>
+			</section>
+			<section class="row">
+				<div class="col-lg-12 d-flex py-1-end">
+					<div class="col-lg-12 badges px-0-st">
+						<ul>
+							<li>
+								<a href="#">
+									<img
+										src="./img/badge_allyant.png"
+										alt=""
+									/>
+								</a>
+							</li>
+							<li>
+								<a href="#"><img src="./img/badge_bluesil.png" /></a>
+							</li>
+						</ul>
+					</div>
+
+					<div class="col-lg-12 disclaimer px-0-st">
+						<p>
+							This page has not been authorized, sponsored, or otherwise
+							approved or endorsed by the companies represented herein. Each of
+							the company logos represented herein are trademarks of Microsoft
+							Corporation; Dow Jones & Company; Nasdaq, Inc.; Forbes Media, LLC;
+							Investor's Business Daily, Inc.; and Morningstar, Inc.
+						</p>
+
+						<p>
+							Copyright &copy; 2025 Zacks Investment Research | 10 S Riverside
+							Plaza Suite #1600 | Chicago, IL 60606
+						</p>
+						<p>
+							At the center of everything we do is a strong commitment to
+							independent research and sharing its profitable discoveries with
+							investors. This dedication to giving investors a trading advantage
+							led to the creation of our proven Zacks Rank stock-rating system.
+							Since 1988 it has more than doubled the S&P 500 with an average
+							gain of +24.35% per year. These returns cover a period from
+							January 1, 1988 through December 2, 2024. Zacks Rank stock-rating
+							system returns are computed monthly based on the beginning of the
+							month and end of the month Zacks Rank stock prices plus any
+							dividends received during that particular month. A simple,
+							equally-weighted average return of all Zacks Rank stocks is
+							calculated to determine the monthly return. The monthly returns
+							are then compounded to arrive at the annual return. Only Zacks
+							Rank stocks included in Zacks hypothetical portfolios at the
+							beginning of each month are included in the return calculations.
+							Zacks Ranks stocks can, and often do, change throughout the month.
+							Certain Zacks Rank stocks for which no month-end price was
+							available, pricing information was not collected, or for certain
+							other reasons have been excluded from these return calculations.
+							Zacks may license the Zacks Mutual Fund rating provided herein to
+							third parties, including but not limited to the issuer.
+						</p>
+						<p>
+							Visit <a href="#">Performance Disclosure</a> for information about
+							the performance numbers displayed above.
+						</p>
+						<p>
+							Visit <a href="#">www.zacksdata.com</a> to get our data and
+							content for your mobile app or website.
+						</p>
+						<p>Real time prices by BATS. Delayed quotes by Sungard.</p>
+						<p>
+							NYSE and AMEX data is at least 20 minutes delayed. NASDAQ data is
+							at least 15 minutes delayed.
+						</p>
+						<p>
+							This site is protected by reCAPTCHA and the Google
+							<a href="#">Privacy Policy</a>,<a href="#">DMCA Policy</a> and
+							<a href="#">Terms of Service</a> apply.
+						</p>
+					</div>
+				</div>
+			</section>
+		</footer>
+	</body>
+</html>

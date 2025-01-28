@@ -65,6 +65,20 @@ h3 {
 				top: 6px;
 			}
 
+			//rank top movers
+			&.tmv {
+				&::before {
+					background-image: url(../img/peak_icon.png);
+				}
+			}
+
+			//rank additions
+			&.rnka {
+				&::before {
+					background-image: url(../img/medal_icon.png);
+				}
+			}
+
 			//earnings surprises
 			&.es {
 				&::before {
