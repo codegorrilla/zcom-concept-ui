@@ -1,3 +1,27 @@
+#header-nav {
+	position: relative;
+	transition: top ease-in 0.5s;
+
+	&.sticky {
+		position: fixed;
+		top: -20px;
+		width: 100%;
+		z-index: 1000;
+		transition: top ease-in 0.5s;
+	}
+}
+
+.header-content {
+	position: relative;
+	top: 0;
+	transition: top ease-in 0.3s;
+
+	&.hide {
+		top: -250px;
+		transition: top ease-in 0.3s;
+	}
+}
+
 nav {
 	padding-top: 0.4rem;
 	border-bottom: 1px solid var(--green);
