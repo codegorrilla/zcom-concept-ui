@@ -291,6 +291,15 @@ aside {
 				float: right;
 			}
 		}
+
+		//adding sticky position to the sidebar
+		@media screen and (min-width: 992px) {
+			.sticky {
+				position: -webkit-sticky;
+				position: sticky;
+				top: 0;
+			}
+		}
 	}
 }
 

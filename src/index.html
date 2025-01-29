@@ -2223,247 +2223,252 @@
 					id="sidebar"
 					class="col-lg-3 col-sm-12"
 				>
-					<!-- accordion -->
-					<div class="widget">
-						<h3 class="widget-title">market summary</h3>
-						<div class="widget-body">
-							<div class="accordion-item">
-								<div
-									class="accordion-header active"
-									data-target="dow"
-								>
-									<table class="mkt-data">
+					<section class="sidebar-content">
+						<!-- accordion -->
+						<div class="widget">
+							<h3 class="widget-title">market summary</h3>
+							<div class="widget-body">
+								<div class="accordion-item">
+									<div
+										class="accordion-header active"
+										data-target="dow"
+									>
+										<table class="mkt-data">
+											<tr>
+												<th class="caret">
+													<img
+														src="./img/caret.svg"
+														alt="caret"
+													/>
+												</th>
+												<th>DOW</th>
+												<th>43,297.03</th>
+												<th>+390.08</th>
+												<th>+0.91%</th>
+											</tr>
+										</table>
+									</div>
+									<div
+										id="dow"
+										class="accordion-content active"
+									>
+										<img src="./img/chart_img.jpg" />
+									</div>
+								</div>
+								<div class="accordion-item">
+									<div
+										class="accordion-header"
+										data-target="nasdaq"
+									>
+										<table class="mkt-data">
+											<tr>
+												<th class="caret">
+													<img
+														src="./img/caret.svg"
+														alt="caret"
+													/>
+												</th>
+												<th>NASDAQ</th>
+												<th>20,031.13</th>
+												<th class="green">+266.24</th>
+												<th class="green">+1.35%</th>
+											</tr>
+										</table>
+									</div>
+									<div
+										id="nasdaq"
+										class="accordion-content"
+									>
+										<img src="./img/chart-img-2.png" />
+									</div>
+								</div>
+								<div class="accordion-item">
+									<div
+										class="accordion-header"
+										data-target="sp"
+									>
+										<table class="mkt-data">
+											<tr>
+												<th class="caret">
+													<img
+														src="./img/caret.svg"
+														alt="caret"
+													/>
+												</th>
+												<th>S&amp;P 500</th>
+												<th>6,040.04</th>
+												<th class="green">+65.97</th>
+												<th class="green">+1.10%</th>
+											</tr>
+										</table>
+									</div>
+									<div
+										id="sp"
+										class="accordion-content"
+									>
+										<img src="./img/chart-img-3.png" />
+									</div>
+								</div>
+							</div>
+						</div>
+
+						<!-- tabs -->
+						<div
+							id="trending_topics"
+							class="widget transparent"
+						>
+							<h3 class="widget-title">trending topics</h3>
+							<div class="widget-body">
+								<div class="tabs d-flex flex-jc-spa">
+									<div
+										class="flex-b-50 tab active"
+										data-target="tab1"
+									>
+										latest
+									</div>
+									<div
+										class="flex-b-50 tab"
+										data-target="tab2"
+									>
+										popular
+									</div>
+								</div>
+
+								<div class="tab-contents">
+									<div
+										id="tab1"
+										class="tab-content active"
+									>
+										<ul>
+											<li>Famed Santa Claus Rally Begins: Stocks to...</li>
+											<li>New Strong Buy Stocks for December 24th...</li>
+											<li>Top Stock Reports for T-Mobile, Toyota Motor...</li>
+											<li>
+												AWS 12/24: Xmas Eve Pre-Markets Mixed (Red & Green)...
+											</li>
+											<li>
+												PFP 12/24: Stocks Closed Mostly Higher to Start
+												Christmas...
+											</li>
+										</ul>
+									</div>
+									<div
+										id="tab2"
+										class="tab-content scrollable"
+									>
+										<ul>
+											<li>Famed Santa Claus Rally Begins: Stocks to...</li>
+											<li>New Strong Buy Stocks for December 24th...</li>
+											<li>Top Stock Reports for T-Mobile, Toyota Motor...</li>
+											<li>
+												AWS 12/24: Xmas Eve Pre-Markets Mixed (Red & Green)...
+											</li>
+											<li>
+												PFP 12/24: Stocks Closed Mostly Higher to Start
+												Christmas...
+											</li>
+										</ul>
+									</div>
+								</div>
+							</div>
+						</div>
+
+						<!-- table -->
+						<div class="widget">
+							<h3 class="widget-title">recent quotes</h3>
+							<div class="widget-body table-wrapper">
+								<table class="table border-cell compact">
+									<thead>
 										<tr>
-											<th class="caret">
-												<img
-													src="./img/caret.svg"
-													alt="caret"
-												/>
-											</th>
-											<th>DOW</th>
-											<th>43,297.03</th>
-											<th>+390.08</th>
-											<th>+0.91%</th>
+											<th class="text-col">symbol</th>
+											<th class="num-col">price</th>
+											<th class="num-col">$chg</th>
+											<th class="num-col">%chg</th>
+											<th class="sym-col">report</th>
 										</tr>
-									</table>
-								</div>
-								<div
-									id="dow"
-									class="accordion-content active"
-								>
-									<img src="./img/chart_img.jpg" />
-								</div>
-							</div>
-							<div class="accordion-item">
-								<div
-									class="accordion-header"
-									data-target="nasdaq"
-								>
-									<table class="mkt-data">
+									</thead>
+									<tbody>
 										<tr>
-											<th class="caret">
-												<img
-													src="./img/caret.svg"
-													alt="caret"
-												/>
-											</th>
-											<th>NASDAQ</th>
-											<th>20,031.13</th>
-											<th class="green">+266.24</th>
-											<th class="green">+1.35%</th>
+											<td class="text-col">VNCE</td>
+											<td class="num-col">4.02</td>
+											<td class="num-col plus">0.31</td>
+											<td class="num-col plus">8.36%</td>
+											<td class="sym-col doc">
+												<a href="#"><img src="./img/doc_icon.svg" /></a>
+											</td>
 										</tr>
-									</table>
-								</div>
-								<div
-									id="nasdaq"
-									class="accordion-content"
-								>
-									<img src="./img/chart-img-2.png" />
-								</div>
-							</div>
-							<div class="accordion-item">
-								<div
-									class="accordion-header"
-									data-target="sp"
-								>
-									<table class="mkt-data">
 										<tr>
-											<th class="caret">
-												<img
-													src="./img/caret.svg"
-													alt="caret"
-												/>
-											</th>
-											<th>S&amp;P 500</th>
-											<th>6,040.04</th>
-											<th class="green">+65.97</th>
-											<th class="green">+1.10%</th>
+											<td class="text-col">MSFT</td>
+											<td class="num-col">430.53</td>
+											<td class="num-col minus">-7.58</td>
+											<td class="num-col minus">-1.73%</td>
+											<td class="sym-col shot">
+												<a href="#"><img src="./img/shot_icon.svg" /></a>
+											</td>
 										</tr>
-									</table>
-								</div>
-								<div
-									id="sp"
-									class="accordion-content"
-								>
-									<img src="./img/chart-img-3.png" />
-								</div>
+										<tr>
+											<td class="text-col">BRK.A</td>
+											<td class="num-col">684,908.50</td>
+											<td class="num-col minus">-2,691.50</td>
+											<td class="num-col minus">-0.39%</td>
+											<td class="sym-col shot">
+												<a href="#"><img src="./img/shot_icon.svg" /></a>
+											</td>
+										</tr>
+										<tr>
+											<td class="text-col">UAA</td>
+											<td class="num-col">8.38</td>
+											<td class="num-col minus">-0.07</td>
+											<td class="num-col minus">-0.83%</td>
+											<td class="sym-col doc">
+												<a href="#"><img src="./img/doc_icon.svg" /></a>
+											</td>
+										</tr>
+									</tbody>
+									<tfoot>
+										<tr>
+											<td colspan="5">
+												<a
+													href="#"
+													class="link blue"
+													><span
+														>Learn to Profit with My portfolio today</span
+													></a
+												>
+											</td>
+										</tr>
+									</tfoot>
+								</table>
 							</div>
 						</div>
-					</div>
 
-					<!-- tabs -->
-					<div
-						id="trending_topics"
-						class="widget transparent"
-					>
-						<h3 class="widget-title">trending topics</h3>
-						<div class="widget-body">
-							<div class="tabs d-flex flex-jc-spa">
-								<div
-									class="flex-b-50 tab active"
-									data-target="tab1"
-								>
-									latest
-								</div>
-								<div
-									class="flex-b-50 tab"
-									data-target="tab2"
-								>
-									popular
-								</div>
-							</div>
-
-							<div class="tab-contents">
-								<div
-									id="tab1"
-									class="tab-content active"
-								>
-									<ul>
-										<li>Famed Santa Claus Rally Begins: Stocks to...</li>
-										<li>New Strong Buy Stocks for December 24th...</li>
-										<li>Top Stock Reports for T-Mobile, Toyota Motor...</li>
-										<li>
-											AWS 12/24: Xmas Eve Pre-Markets Mixed (Red & Green)...
-										</li>
-										<li>
-											PFP 12/24: Stocks Closed Mostly Higher to Start
-											Christmas...
-										</li>
-									</ul>
-								</div>
-								<div
-									id="tab2"
-									class="tab-content scrollable"
-								>
-									<ul>
-										<li>Famed Santa Claus Rally Begins: Stocks to...</li>
-										<li>New Strong Buy Stocks for December 24th...</li>
-										<li>Top Stock Reports for T-Mobile, Toyota Motor...</li>
-										<li>
-											AWS 12/24: Xmas Eve Pre-Markets Mixed (Red & Green)...
-										</li>
-										<li>
-											PFP 12/24: Stocks Closed Mostly Higher to Start
-											Christmas...
-										</li>
-									</ul>
-								</div>
+						<!-- ad widget -->
+						<div class="widget">
+							<div class="widget-body ad">
+								<img
+									src="./img/sidebar_ad_2.jpg"
+									alt=""
+								/>
 							</div>
 						</div>
-					</div>
 
-					<!-- table -->
-					<div class="widget">
-						<h3 class="widget-title">recent quotes</h3>
-						<div class="widget-body table-wrapper">
-							<table class="table border-cell compact">
-								<thead>
-									<tr>
-										<th class="text-col">symbol</th>
-										<th class="num-col">price</th>
-										<th class="num-col">$chg</th>
-										<th class="num-col">%chg</th>
-										<th class="sym-col">report</th>
-									</tr>
-								</thead>
-								<tbody>
-									<tr>
-										<td class="text-col">VNCE</td>
-										<td class="num-col">4.02</td>
-										<td class="num-col plus">0.31</td>
-										<td class="num-col plus">8.36%</td>
-										<td class="sym-col doc">
-											<a href="#"><img src="./img/doc_icon.svg" /></a>
-										</td>
-									</tr>
-									<tr>
-										<td class="text-col">MSFT</td>
-										<td class="num-col">430.53</td>
-										<td class="num-col minus">-7.58</td>
-										<td class="num-col minus">-1.73%</td>
-										<td class="sym-col shot">
-											<a href="#"><img src="./img/shot_icon.svg" /></a>
-										</td>
-									</tr>
-									<tr>
-										<td class="text-col">BRK.A</td>
-										<td class="num-col">684,908.50</td>
-										<td class="num-col minus">-2,691.50</td>
-										<td class="num-col minus">-0.39%</td>
-										<td class="sym-col shot">
-											<a href="#"><img src="./img/shot_icon.svg" /></a>
-										</td>
-									</tr>
-									<tr>
-										<td class="text-col">UAA</td>
-										<td class="num-col">8.38</td>
-										<td class="num-col minus">-0.07</td>
-										<td class="num-col minus">-0.83%</td>
-										<td class="sym-col doc">
-											<a href="#"><img src="./img/doc_icon.svg" /></a>
-										</td>
-									</tr>
-								</tbody>
-								<tfoot>
-									<tr>
-										<td colspan="5">
-											<a
-												href="#"
-												class="link blue"
-												><span>Learn to Profit with My portfolio today</span></a
-											>
-										</td>
-									</tr>
-								</tfoot>
-							</table>
+						<!-- top zacks feature -->
+						<div class="widget">
+							<h3 class="widget-title zacks-icon">
+								<span> top zacks features </span>
+							</h3>
+							<div class="widget-body feature-items">
+								<ul class="px-0-st py-1-end">
+									<li><a href="#">Zacks #1 rank</a></li>
+									<li><a href="#">industry rank list</a></li>
+									<li><a href="#">profit from the pros</a></li>
+									<li><a href="#">stock screener</a></li>
+									<li><a href="#">my portfolio</a></li>
+									<li><a href="#">zacks ultimate</a></li>
+								</ul>
+							</div>
 						</div>
-					</div>
-
-					<div class="widget">
-						<div class="widget-body ad">
-							<img
-								src="./img/sidebar_ad_2.jpg"
-								alt=""
-							/>
-						</div>
-					</div>
-
-					<!-- top zacks feature -->
-					<div class="widget">
-						<h3 class="widget-title zacks-icon">
-							<span> top zacks features </span>
-						</h3>
-						<div class="widget-body feature-items">
-							<ul class="px-0-st py-1-end">
-								<li><a href="#">Zacks #1 rank</a></li>
-								<li><a href="#">industry rank list</a></li>
-								<li><a href="#">profit from the pros</a></li>
-								<li><a href="#">stock screener</a></li>
-								<li><a href="#">my portfolio</a></li>
-								<li><a href="#">zacks ultimate</a></li>
-							</ul>
-						</div>
-					</div>
+					</section>
 				</aside>
 			</section>
 		</main>
