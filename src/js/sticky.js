@@ -48,3 +48,22 @@ export function stickyHeader() {
 		//window.onscroll = console.log(`I've scrolled ${window.scrollY} pixels`);
 	});
 }
+
+//sticky header navigation effect 2
+export function stickyHeader2() {
+	const headerContent = document.querySelector('.header-content');
+	const headerTop = headerContent.querySelector('header');
+	const headerNav = headerContent.querySelector('#header-nav');
+
+	console.log(headerNav);
+
+	window.onscroll = () => {
+		if (window.scrollY > 80) {
+			headerTop.classList.add('hidden');
+			headerNav.classList.add('sticky');
+		} else {
+			headerTop.classList.remove('hidden');
+			headerNav.classList.remove('sticky');
+		}
+	};
+}

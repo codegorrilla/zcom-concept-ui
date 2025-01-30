@@ -342,6 +342,12 @@ aside {
 			padding: 0;
 		}
 	}
+
+	&.hidden {
+		display: none;
+		opacity: 0;
+		transition: all linear 0.3s;
+	}
 }
 
 //accordion
@@ -1144,5 +1150,206 @@ footer {
 	img {
 		width: 100%;
 		max-width: 100%;
+	}
+}
+
+//widget control
+.widget-ctrl {
+	cursor: pointer;
+	display: inline-block;
+	width: 100%;
+	height: 22px;
+	background-color: transparent;
+	border: none;
+	font-family: 'Poppins';
+	font-weight: normal;
+	font-size: 0.875rem;
+	text-align: right;
+	color: var(--blue);
+
+	span {
+		font-family: inherit;
+		font-size: inherit;
+		color: inherit;
+		text-transform: capitalize;
+	}
+
+	img {
+		width: 22px;
+		height: 24px;
+		margin-left: 0.5rem;
+		float: right;
+		position: relative;
+		top: -4px;
+		transition: transform linear 0.3s;
+
+		&.rotate {
+			transform: rotate(90deg);
+			transition: transform linear 0.3s;
+		}
+	}
+
+	&:hover {
+		span {
+			text-decoration: underline;
+		}
+	}
+}
+
+//widget settings panel
+.settings-panel {
+	display: block;
+	min-height: 120px;
+	visibility: visible;
+	transform: scaleY(1);
+	transition: all ease 0.6s;
+	transform-origin: top center;
+
+	sup {
+		position: relative;
+		top: 0.2rem;
+		color: red;
+	}
+
+	&.hidden {
+		margin: 0;
+		min-height: 0;
+		transform: scaleY(0);
+		visibility: hidden;
+		display: none;
+		transition: all ease 0.6s;
+	}
+
+	.feature-items {
+		ul {
+			li {
+				a {
+					border: 1px solid var(--baseTextColor);
+					background-color: transparent;
+					color: var(--baseTextColor);
+				}
+
+				&:hover,
+				&:focus {
+					a {
+						background-color: var(--baseTextColor);
+						border-color: transparent;
+						color: var(--basebgColor);
+					}
+				}
+
+				&.active {
+					a {
+						background-color: var(--grey);
+						border-color: transparent;
+						color: var(--basefgColor);
+					}
+				}
+			}
+		}
+	}
+
+	.widget-footer {
+		padding-top: 0.4rem;
+		padding-bottom: 0.8rem;
+		font-family: 'Poppins';
+		font-weight: normal;
+		color: var(--baseTextColor);
+		font-size: 0.875rem;
+		text-align: left;
+	}
+}
+
+//zacks resources sidebar panel
+.widget.resources {
+	.widget-title {
+		padding-bottom: 0;
+	}
+	.widget-body {
+		ul {
+			padding-top: 0.4rem;
+			padding-left: 0.3rem;
+			padding-bottom: 0.5rem;
+
+			li {
+				padding: 0.4rem 0;
+				font-family: 'Poppins';
+				font-size: 0.775rem;
+				text-align: left;
+				color: var(--baseTextColor);
+				line-height: 1.2;
+
+				a {
+					font-family: 'Poppins-bold';
+					color: var(--blue);
+					text-transform: capitalize;
+
+					&:hover {
+						text-decoration: underline;
+					}
+				}
+			}
+		}
+	}
+}
+
+//my portfolio widget
+.my-portfolio {
+	.rank-chip {
+		span {
+			--size: 20px;
+			display: block;
+			width: var(--size);
+			height: var(--size);
+			border-radius: 4px;
+			float: right;
+			background-color: var(--grey);
+			text-align: center;
+			color: var(--baseTextColor);
+			line-height: 1.8;
+
+			&.two {
+				background-color: var(--green);
+				line-height: 1.4;
+			}
+
+			&.three {
+				background-color: red;
+			}
+
+			&.four {
+				background-color: orange;
+			}
+		}
+	}
+}
+
+.settings-panel .feature-items {
+	ul {
+		li {
+			a {
+				&:hover {
+					background-color: var(--grey);
+				}
+
+				&::after {
+					content: '+';
+					top: 2px;
+					background-image: none;
+					position: relative;
+					float: right;
+					width: 7px;
+					height: 6px;
+				}
+
+				&.remove {
+					&::after {
+						content: '-';
+						top: 1px;
+						background-image: none;
+					}
+				}
+			}
+		}
 	}
 }

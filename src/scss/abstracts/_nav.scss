@@ -1,27 +1,3 @@
-#header-nav {
-	position: relative;
-	transition: top ease-in 0.5s;
-
-	&.sticky {
-		position: fixed;
-		top: -20px;
-		width: 100%;
-		z-index: 1000;
-		transition: top ease-in 0.5s;
-	}
-}
-
-.header-content {
-	position: relative;
-	top: 0;
-	transition: top ease-in 0.3s;
-
-	&.hide {
-		top: -250px;
-		transition: top ease-in 0.3s;
-	}
-}
-
 nav {
 	padding-top: 0.4rem;
 	border-bottom: 1px solid var(--green);
@@ -32,6 +8,32 @@ nav {
 	max-width: 1512px;
 	margin-right: auto;
 	margin-left: auto;
+}
+
+.header-content {
+	#header-nav {
+		position: fixed;
+		width: 100%;
+		z-index: 1000;
+		background-color: transparent;
+		transition: top linear 0.7s;
+
+		&.sticky {
+			top: -17px;
+			transition: top linear 0.7s;
+			box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.1);
+		}
+	}
+
+	header {
+		position: relative;
+		transition: top linear 0.5s;
+		top: 0;
+		&.hidden {
+			top: -250px;
+			transition: top linear 0.5s;
+		}
+	}
 }
 
 //main header navigation
@@ -292,9 +294,9 @@ nav {
 //offcanvas nav container
 .off-canvas {
 	position: fixed;
-	z-index: 1;
+	z-index: 1000;
 	top: 0;
-	right: -23rem; //~ 378px for col-lg-3
+	right: -50rem;
 	transition: right linear 0.4s;
 
 	//hide off-screen
