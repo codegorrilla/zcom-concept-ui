@@ -2,8 +2,6 @@ import '../scss/styles.scss';
 
 import { setAccordion } from './accordion';
 import { trending_tabs } from './tab';
-import { top_movers } from './tab';
-import { ear_suprise } from './tab';
 import { setScroll } from './scroll';
 import { offCanvas } from './off-canvas';
 import { stickyHeader2 } from './sticky';
@@ -12,13 +10,9 @@ import { stickyHeader2 } from './sticky';
 
 setAccordion();
 trending_tabs();
-top_movers();
-ear_suprise();
 setScroll();
 offCanvas();
 stickyHeader2();
-//stickySidebar();
-//stickyHeader();
 
 //toggling widget settings
 const toggleSettings = () => {
@@ -80,3 +74,17 @@ const gotoTop = () => {
 };
 
 gotoTop();
+
+//read full story cta
+const readFullStory = () => {
+	const shade = document.querySelector('.shade');
+	const readMoreBtn = shade.querySelector('.cta');
+	const fullStory = document.querySelector('.full-story');
+
+	readMoreBtn.addEventListener('click', () => {
+		fullStory.classList.toggle('hidden');
+		shade.classList.toggle('hidden');
+	});
+};
+
+readFullStory();
